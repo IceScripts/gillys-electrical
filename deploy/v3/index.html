@@ -1,0 +1,650 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilly's Electrical | Electrician &amp; Ventilation Specialist in Folkestone</title>
+<meta name="description" content="Qualified electrician and ventilation specialist in Folkestone. EICRs, consumer units, rewires, fault finding, extractor fans and condensation solutions across East Kent. Free quotations.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    /* Palette lifted from gillyselectrical.co.uk's own theme
+       (themes/mltteamplus/.../color-green.css) so this matches the green
+       Gilly already uses, rather than an approximation. */
+    :root {
+        --green:        #72a732;   /* $base - his declared brand green */
+        --green-dk:     #547f1f;   /* his success-dark; 4.8:1 on white, passes AA */
+        --green-deep:   #1d632e;   /* his --mt-color-dark-colored, hsl(135,55%,25%) */
+        --green-deep-2: #277a3b;   /* raised dark surface */
+        --green-band:   #9ce2ae;   /* his --mt-color-primary, hsl(135,55%,75%) */
+        --green-tint:   #edf8f0;
+        --cream:        #f8f9fb;   /* his --mt-color-accent */
+        --ink:          #1f2023;   /* his --mt-color-base, hsl(225,6%,13%) */
+        --muted:        #5e6066;
+        --muted-lt:     #a9c4b1;   /* muted text on dark */
+        --line:         #e3e5e9;
+        --white:        #ffffff;
+        --star:         #ea9900;   /* his --mt-color-warning */
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+        font-family: 'Montserrat', system-ui, sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        font-size: 16.5px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    /* PT Serif + Montserrat are the pairing his live site already runs */
+    h1, h2, h3 { font-family: 'PT Serif', Georgia, serif; font-weight: 700; line-height: 1.15; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    :focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 3px; }
+
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 26px; }
+
+    /* eyebrow: small label + rule, from the SES and OCPE references */
+    .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12.5px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--green-dk);
+        margin-bottom: 16px;
+    }
+    .eyebrow::after { content: ""; height: 1px; width: 58px; background: currentColor; opacity: .45; }
+    .eyebrow.on-dark { color: var(--green-band); }
+    .eyebrow.centred { justify-content: center; }
+    .eyebrow.centred::before { content: ""; height: 1px; width: 58px; background: currentColor; opacity: .45; }
+
+    /* two-tone headings, from OCPE / Thermo-Flow */
+    h1 .hl, h2 .hl { color: var(--green); }
+    .on-dark h2 .hl, .hero h1 .hl { color: var(--green-band); }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 15.5px;
+        text-decoration: none;
+        padding: 15px 28px;
+        border-radius: 7px;
+        border: 2px solid transparent;
+        transition: background .18s, color .18s, border-color .18s, transform .18s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--green); color: #10240b; box-shadow: 0 2px 10px rgba(114,167,50,.32); }
+    .btn-primary:hover { background: #6cb94a; }
+    .btn-dark { background: var(--green-deep); color: #fff; }
+    .btn-dark:hover { background: #22492a; }
+    .btn-outline-light { border-color: rgba(255,255,255,.42); color: #fff; }
+    .btn-outline-light:hover { border-color: var(--green-band); background: var(--green-band); color: var(--green-deep); }
+    .btn-outline { border-color: var(--line); background: var(--white); color: var(--ink); }
+    .btn-outline:hover { border-color: var(--green); }
+
+    /* - TOP BAR - */
+    .topbar { background: var(--green-deep); color: var(--muted-lt); font-size: 13.5px; }
+    .topbar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 9px; }
+    .topbar ul { display: flex; gap: 22px; list-style: none; flex-wrap: wrap; }
+    .topbar li { display: flex; align-items: center; gap: 7px; }
+    .topbar a { color: #fff; text-decoration: none; font-weight: 600; }
+    .topbar a:hover { color: var(--green-band); }
+
+    /* - NAV (skeleton: logo left, centred links, dark button right) - */
+    .nav-outer { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 900; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 26px; padding-block: 10px; }
+    .nav-logo img { height: 62px; }
+    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--muted);
+        padding: 8px 0;
+        border-bottom: 2px solid transparent;
+        transition: color .15s, border-color .15s;
+    }
+    .nav-links a:hover { color: var(--ink); border-bottom-color: var(--green); }
+    .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+
+    /* - HERO (SES: dark green, serif display, eyebrow, twin CTAs) - */
+    .hero { background: var(--green-deep); color: #fff; position: relative; overflow: hidden; }
+    .hero::after {
+        content: "";
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse at 78% 30%, rgba(114,167,50,.22) 0%, transparent 62%);
+        pointer-events: none;
+    }
+    .hero .wrap { position: relative; z-index: 1; padding-block: 86px 78px; }
+    .hero h1 { font-size: clamp(38px, 5.1vw, 62px); max-width: 17ch; }
+    .hero-sub { color: var(--muted-lt); font-size: 18.5px; max-width: 54ch; margin: 22px 0 34px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; }
+    .hero-call { margin-top: 22px; font-size: 15.5px; color: var(--muted-lt); }
+    .hero-call a { color: #fff; font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--green); padding-bottom: 1px; }
+    .hero-call a:hover { color: var(--green-band); }
+
+    /* - TICKS STRIP (skeleton: thin band under hero) - */
+    .ticks { background: var(--green-band); }
+    .ticks ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 40px;
+        list-style: none;
+        padding-block: 15px;
+    }
+    .ticks li {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--green-deep);
+    }
+
+    /* - SECTION FURNITURE - */
+    .section { padding-block: 92px; }
+    .section h2 { font-size: clamp(30px, 3.8vw, 43px); }
+    .lede { color: var(--muted); margin-top: 14px; }
+    .head-centred { text-align: center; max-width: 62ch; margin: 0 auto 52px; }
+    .head-centred .lede { margin-inline: auto; }
+
+    /* - SERVICES: text left, photo cluster right (Example 1) - */
+    .split { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 62px; align-items: center; }
+    .tick-list { list-style: none; margin: 26px 0 30px; display: grid; gap: 13px; }
+    .tick-list li { display: flex; gap: 12px; align-items: flex-start; }
+    .tick-list svg { flex-shrink: 0; margin-top: 3px; }
+    .tick-list strong { display: block; font-weight: 600; }
+    .tick-list span { color: var(--muted); font-size: 15px; }
+
+    /* P1 P2 landscape row, P3 P4 landscape row */
+    .cluster { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .cluster figure { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 26px rgba(22,53,28,.13); }
+    .cluster figure img { width: 100%; height: 100%; object-fit: cover; }
+    .cluster .p-tall { aspect-ratio: 4 / 3; }
+    .cluster .p-wide {
+        aspect-ratio: 4 / 3;
+    }
+
+    /* - PROCESS (skeleton green band + Thermo-Flow numbered badges) - */
+    .process { background: var(--green-band); }
+    .process .head-centred h2, .process .head-centred .lede { color: var(--green-deep); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .step {
+        background: var(--white);
+        border-radius: 14px;
+        padding: 30px 28px 32px;
+        box-shadow: 0 6px 20px rgba(22,53,28,.10);
+    }
+    .step-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+    .step-num {
+        width: 46px; height: 46px;
+        border-radius: 50%;
+        background: var(--green);
+        color: #fff;
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        font-size: 21px;
+        display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0;
+    }
+    .step-label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--green-dk);
+    }
+    .step h3 { font-size: 22px; margin-bottom: 9px; }
+    .step p { color: var(--muted); font-size: 15.5px; }
+
+    /* - REVIEWS + WORKING HOURS (skeleton: side by side) - */
+    .reviews-grid { display: grid; grid-template-columns: 1.55fr 0.85fr; gap: 34px; align-items: start; }
+    .review-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .review {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 13px;
+        padding: 24px 24px 22px;
+    }
+    .stars { color: var(--star); letter-spacing: 2px; font-size: 16px; }
+    .review p { margin: 11px 0 16px; font-size: 15.5px; color: #3c4238; }
+    .review .who { font-size: 14px; color: var(--muted); }
+    .review .who strong { color: var(--ink); font-weight: 600; }
+    .more-reviews { margin-top: 20px; text-align: left; }
+
+    .hours {
+        background: var(--green-deep);
+        color: #fff;
+        border-radius: 15px;
+        padding: 30px 28px;
+    }
+    .hours h3 { font-size: 23px; display: flex; align-items: center; gap: 11px; margin-bottom: 20px; }
+    .hours-row {
+        display: flex; align-items: center; gap: 10px;
+        padding: 9px 0;
+        border-bottom: 1px solid rgba(255,255,255,.09);
+        font-size: 15px;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+    .dot.off { background: #5c6659; }
+    .hours-row .day { font-weight: 600; }
+    .hours-row .time { margin-left: auto; color: var(--muted-lt); }
+    .hours-row .time.closed { color: #7d8877; }
+    .emergency {
+        display: flex; justify-content: space-between; gap: 12px;
+        font-size: 12.5px; letter-spacing: 0.09em; text-transform: uppercase;
+        color: var(--muted-lt);
+        padding: 18px 0 20px;
+    }
+    .emergency strong { color: #fff; font-weight: 600; }
+    .advice {
+        background: var(--green-deep-2);
+        border-radius: 11px;
+        padding: 20px;
+        text-align: center;
+    }
+    .advice .lbl {
+        font-size: 12px; font-weight: 700; letter-spacing: 0.15em;
+        text-transform: uppercase; color: var(--green-band);
+    }
+    .advice a {
+        display: block;
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        font-size: 29px;
+        color: #fff;
+        text-decoration: none;
+        margin: 5px 0 3px;
+    }
+    .advice a:hover { color: var(--green-band); }
+    .advice .note { font-size: 13.5px; color: var(--muted-lt); }
+
+    /* - LOCATION (skeleton: green band, framed map) - */
+    .location { background: var(--green-band); }
+    .map-frame {
+        background: var(--green-deep);
+        border-radius: 18px;
+        padding: 16px;
+        max-width: 900px;
+        margin: 0 auto;
+        box-shadow: 0 14px 34px rgba(22,53,28,.20);
+    }
+    .map-inner {
+        background: var(--green-tint);
+        border-radius: 11px;
+        aspect-ratio: 16 / 8;
+        overflow: hidden;
+        line-height: 0;
+    }
+    .map-inner iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .map-caption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding: 16px 6px 2px;
+        color: #fff;
+    }
+    .map-caption .addr { display: flex; align-items: center; gap: 10px; font-size: 15.5px; }
+    .map-caption .addr strong { font-weight: 600; }
+    .map-caption a { color: var(--green-band); font-weight: 600; font-size: 15px; text-decoration: none; }
+    .map-caption a:hover { text-decoration: underline; }
+    @media (max-width: 700px) { .map-inner { aspect-ratio: 4 / 3.4; } }
+
+    /* - FOOTER - */
+    .footer { background: var(--green-deep); color: var(--muted-lt); }
+    .footer .wrap { padding-block: 58px 0; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 46px; padding-bottom: 42px; }
+    .footer img { height: 58px; margin-bottom: 16px; }
+    .footer p { font-size: 15px; max-width: 40ch; }
+    .footer h4 { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #fff; margin-bottom: 15px; }
+    .footer ul { list-style: none; }
+    .footer li { margin-bottom: 9px; font-size: 15px; }
+    .footer a { color: var(--muted-lt); text-decoration: none; }
+    .footer a:hover { color: var(--green-band); }
+    .footer-bottom {
+        border-top: 1px solid rgba(255,255,255,.10);
+        padding: 20px 0 26px;
+        font-size: 13.5px;
+        display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+    }
+
+    /* - STICKY MOBILE CALL BAR - */
+    .callbar { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 950; background: var(--green); border-top: 3px solid var(--green-deep); }
+    .callbar a {
+        flex: 1;
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        padding: 15px 8px;
+        font-weight: 700; font-size: 16px;
+        color: #10240b; text-decoration: none;
+    }
+    .callbar a + a { border-left: 2px solid rgba(0,0,0,.18); }
+
+    /* - RESPONSIVE - */
+    @media (max-width: 1000px) {
+        .split { grid-template-columns: 1fr; gap: 44px; }
+        .reviews-grid { grid-template-columns: 1fr; }
+        .steps { grid-template-columns: 1fr; }
+        .cluster { grid-template-columns: 1fr; }
+        .cluster .p-wide { aspect-ratio: 16 / 9; }
+    }
+    @media (max-width: 780px) {
+        .nav-links { display: none; }
+        .nav-toggle { display: block; }
+        .nav-logo img { height: 50px; }
+        .topbar ul li:not(:first-child) { display: none; }
+        .section { padding-block: 58px; }
+        .hero .wrap { padding-block: 56px 50px; }
+        .review-cards { grid-template-columns: 1fr; }
+        .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+        .callbar { display: flex; }
+        body { padding-bottom: 62px; }
+        .hero-actions .btn { flex: 1 1 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+</style>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="wrap">
+        <ul>
+            <li>Fully insured</li>
+            <li>Qualified electrician</li>
+            <li>Free quotations</li>
+            <li>Certification provided</li>
+        </ul>
+        <div>Folkestone &amp; East Kent &middot; <a href="tel:01303 770 445">01303 770 445</a></div>
+    </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-outer">
+    <nav class="wrap nav">
+        <a href="#" class="nav-logo"><img src="gilly-logo-trans.png" alt="Gilly's Electrical"></a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#location">Find Us</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-dark">Contact us</a>
+        <button class="nav-toggle" aria-label="Menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1f2023" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+    </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="wrap">
+        <p class="eyebrow on-dark">Electrical &amp; ventilation &middot; Folkestone</p>
+        <h1>Electrician &amp; <span class="hl">Ventilation Specialist</span> in Folkestone</h1>
+        <p class="hero-sub">Electrical services, extractor fans, ventilation systems and condensation solutions for homes, landlords and businesses across East Kent.</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a free quote</a>
+            <a href="#services" class="btn btn-outline-light">View our services</a>
+        </div>
+        <p class="hero-call">Prefer to call? <a href="tel:01303 770 445">01303 770 445</a></p>
+    </div>
+</section>
+
+<!-- TICKS STRIP -->
+<div class="ticks">
+    <div class="wrap">
+        <ul>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> EICR certificates</li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Consumer unit upgrades</li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Rewires &amp; fault finding</li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Extractor fans &amp; ventilation</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SERVICES: text left, photo cluster right -->
+<section class="section" id="services">
+    <div class="wrap split">
+        <div>
+            <p class="eyebrow">Wide range of electrical services</p>
+            <h2>Do you need an <span class="hl">electrician?</span><br>Look no further.</h2>
+            <p class="lede">Fully qualified, fully insured, and working across Folkestone and East Kent. From a single socket to a full rewire, and the ventilation work most electricians won't touch.</p>
+
+            <ul class="tick-list">
+                <li>
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    <div><strong>Domestic &amp; commercial electrical work</strong><span>EICRs, consumer units, fault finding, rewires, emergency repairs, smoke alarms and commercial installations.</span></div>
+                </li>
+                <li>
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    <div><strong>Ventilation &amp; condensation control</strong><span>Extractor fans, PIV units and full ventilation systems that deal with damp and mould at the cause.</span></div>
+                </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">Get a free quote</a>
+        </div>
+
+        <div class="cluster">
+            <figure class="p-tall"><img src="gilly-photo1.jpg" alt="Electrical fault finding and diagnostics"></figure>
+            <figure class="p-tall"><img src="gilly-photo2.jpg" alt="Consumer unit and fuse board work"></figure>
+            <figure class="p-tall"><img src="gilly-photo3.jpg" alt="EICR inspection and testing"></figure>
+            <figure class="p-wide"><img src="gilly-photo4.jpg" alt="Gilly's Electrical on site in Folkestone"></figure>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" id="process">
+    <div class="wrap">
+        <div class="head-centred">
+            <p class="eyebrow centred">What you can expect</p>
+            <h2>How it <span class="hl">works</span></h2>
+            <p class="lede">Three steps from first call to certificate. No jargon, no pressure, no surprise pricing.</p>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-badge"><span class="step-num">1</span><span class="step-label">Step one</span></div>
+                <h3>Give us a ring</h3>
+                <p>Tell us what you need. You'll get honest advice on the spot and a straight answer about whether it's a job worth doing.</p>
+            </div>
+            <div class="step">
+                <div class="step-badge"><span class="step-num">2</span><span class="step-label">Step two</span></div>
+                <h3>Free written quote</h3>
+                <p>We'll price the work clearly and in writing before anything starts, so you know exactly where you stand.</p>
+            </div>
+            <div class="step">
+                <div class="step-badge"><span class="step-num">3</span><span class="step-label">Step three</span></div>
+                <h3>Job done &amp; certified</h3>
+                <p>Work carried out to current regulations, the site left clean and tidy, and your certification issued on completion.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS + WORKING HOURS
+     PLACEHOLDER: the three reviews below are carried over from the earlier drafts
+     and are NOT real customer feedback. Replace with genuine Google reviews before
+     this goes live. -->
+<section class="section" id="reviews">
+    <div class="wrap">
+        <div class="head-centred">
+            <p class="eyebrow centred">Reviews</p>
+            <h2>What our <span class="hl">customers say</span></h2>
+        </div>
+
+        <div class="reviews-grid">
+            <div>
+                <div class="review-cards">
+                    <div class="review">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Upgraded our consumer unit quickly and professionally, and the price was very fair. Would recommend to anyone in the Folkestone area.</p>
+                        <p class="who"><strong>Sarah M.</strong> &middot; Folkestone</p>
+                    </div>
+                    <div class="review">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Called out for an emergency repair on a Saturday and was here within the hour. Sorted it and explained everything clearly.</p>
+                        <p class="who"><strong>James T.</strong> &middot; Hythe</p>
+                    </div>
+                    <div class="review">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Extractor fans fitted in the bathroom and kitchen for condensation. No more mould on the windows, and very tidy work throughout.</p>
+                        <p class="who"><strong>Karen L.</strong> &middot; Dover</p>
+                    </div>
+                    <div class="review">
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Did the EICR on two of our rental properties. Turned up when he said he would and the paperwork came through the same day.</p>
+                        <p class="who"><strong>Placeholder</strong> &middot; replace with a real review</p>
+                    </div>
+                </div>
+                <div class="more-reviews"><a href="#" class="btn btn-outline">Read more reviews</a></div>
+            </div>
+
+            <aside class="hours" id="hours">
+                <h3>
+                    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Working hours
+                </h3>
+                <div class="hours-row"><span class="dot"></span><span class="day">Monday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="dot"></span><span class="day">Tuesday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="dot"></span><span class="day">Wednesday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="dot"></span><span class="day">Thursday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="dot"></span><span class="day">Friday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="dot off"></span><span class="day">Saturday</span><span class="time">Closed</span></div>
+                <div class="hours-row"><span class="dot off"></span><span class="day">Sunday</span><span class="time closed">Closed</span></div>
+
+                <div class="emergency"><span>Emergency call-outs</span><strong>By arrangement</strong></div>
+
+                <div class="advice">
+                    <p class="lbl">Call for advice</p>
+                    <a href="tel:01303 770 445">01303 770 445</a>
+                    <p class="note">Quotes by phone or email</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section location" id="location">
+    <div class="wrap">
+        <div class="head-centred">
+            <p class="eyebrow centred">Areas covered</p>
+            <h2>Find <span class="hl">us</span></h2>
+            <p class="lede">Based in Folkestone, covering Hythe, Dover, Ashford, Canterbury, Deal, Hawkinge, Sandgate and Cheriton. Not sure if you're in range? Give us a ring.</p>
+        </div>
+
+        <div class="map-frame">
+            <div class="map-inner">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156.61150544571746!2d1.140875505735024!3d51.093992082954166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deb8b5ae7f508b%3A0x452ace3942022788!2s41%20Charles%20Cres%2C%20Folkestone%20CT19%204NG!5e0!3m2!1sen!2suk!4v1761557420424!5m2!1sen!2suk"
+                    title="Gilly's Electrical, 41 Charles Crescent, Folkestone CT19 4NG"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="map-caption">
+                <p class="addr">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span><strong>41 Charles Crescent</strong>, Folkestone, Kent CT19 4NG</span>
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=41+Charles+Crescent+Folkestone+CT19+4NG" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="section" id="contact" style="padding-block:78px;">
+    <div class="wrap head-centred" style="margin-bottom:0;">
+        <p class="eyebrow centred">Get in touch</p>
+        <h2>Need an <span class="hl">electrician?</span></h2>
+        <p class="lede">Call today for a free quotation, or drop us an email and we'll come back to you.</p>
+        <div class="hero-actions" style="justify-content:center;margin-top:28px;">
+            <a href="tel:01303 770 445" class="btn btn-primary">Call 01303 770 445</a>
+            <a href="mailto:info@gillyselectrical.co.uk" class="btn btn-outline">Email us</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div>
+                <img src="gilly-logo-light.png" alt="Gilly's Electrical">
+                <p>Electrician and ventilation specialist serving Folkestone, Hythe, Dover, Ashford, Canterbury and the wider East Kent area. Fully insured and qualified.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">EICR certificates</a></li>
+                    <li><a href="#services">Consumer unit upgrades</a></li>
+                    <li><a href="#services">Rewires</a></li>
+                    <li><a href="#services">Fault finding</a></li>
+                    <li><a href="#services">Extractor fans</a></li>
+                    <li><a href="#services">Condensation solutions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get in touch</h4>
+                <ul>
+                    <li><a href="tel:01303 770 445">01303 770 445</a></li>
+                    <li><a href="mailto:info@gillyselectrical.co.uk">info@gillyselectrical.co.uk</a></li>
+                    <li>Folkestone, Kent</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Gilly's Electrical</span>
+            <span>Folkestone &middot; Hythe &middot; Dover &middot; Ashford &middot; Canterbury</span>
+        </div>
+    </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="callbar">
+    <a href="tel:01303 770 445">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call now
+    </a>
+    <a href="#contact">Free quote</a>
+</div>
+
+<script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+        var links = document.querySelector('.nav-links');
+        var shown = links.style.display === 'flex';
+        if (shown) { links.style.display = ''; return; }
+        links.style.display = 'flex';
+        links.style.flexDirection = 'column';
+        links.style.position = 'absolute';
+        links.style.top = '100%';
+        links.style.left = '0';
+        links.style.right = '0';
+        links.style.background = '#fff';
+        links.style.padding = '16px 26px';
+        links.style.gap = '10px';
+        links.style.borderBottom = '1px solid #e2e6dc';
+    });
+</script>

@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilly's Electrical | Electrician &amp; Ventilation Specialist in Folkestone</title>
+    <meta name="description" content="Qualified electrician and ventilation specialist in Folkestone. EICRs, consumer units, rewires, fault finding, extractor fans and condensation solutions across East Kent. Free quotations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-green: #1d632e;
+            --brand-green: #72a732;
+            --medium-green: #547f1f;
+            --bright-green: #9ce2ae;
+            --light-green-bg: #edf8f0;
+            --light-green-text-bg: #cbeed6;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: var(--white);
+        }
+
+        img { max-width: 100%; display: block; }
+        a { color: inherit; }
+
+        /* ==================== TOP BAR ==================== */
+        .topbar {
+            background: var(--dark-green);
+            color: rgba(255,255,255,0.75);
+            font-size: 13.5px;
+        }
+
+        .topbar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 9px 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .topbar ul {
+            display: flex;
+            gap: 22px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .topbar li {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .topbar-phone {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .topbar-phone:hover {
+            color: var(--bright-green);
+        }
+
+        /* ==================== NAV ==================== */
+        .nav-outer {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 26px;
+            height: 72px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            padding: 8px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--medium-green);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--dark-green);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .nav-phone:hover {
+            color: var(--medium-green);
+        }
+
+        .nav-cta {
+            background: var(--medium-green);
+            color: var(--white);
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+
+        .nav-cta:hover {
+            background: var(--dark-green);
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        /* ==================== HERO ==================== */
+        .hero {
+            background: var(--dark-green);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 78% 30%, rgba(114,167,50,.22) 0%, transparent 62%);
+            pointer-events: none;
+        }
+
+        .hero-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 86px 2rem 78px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--bright-green);
+            margin-bottom: 16px;
+        }
+
+        .eyebrow::after {
+            content: "";
+            height: 1px;
+            width: 58px;
+            background: currentColor;
+            opacity: 0.45;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5.1vw, 62px);
+            font-weight: 800;
+            line-height: 1.1;
+            max-width: 17ch;
+            color: #fff;
+        }
+
+        .hero h1 .hl {
+            color: var(--bright-green);
+        }
+
+        .hero-sub {
+            color: rgba(255,255,255,0.7);
+            font-size: 18.5px;
+            max-width: 54ch;
+            margin: 22px 0 34px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            background: var(--brand-green);
+            color: #10240b;
+            padding: 15px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15.5px;
+            border: 2px solid transparent;
+            transition: background 0.18s, transform 0.18s;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: #6cb94a;
+            transform: translateY(-1px);
+        }
+
+        .btn-outline-light {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 2px solid rgba(255,255,255,0.42);
+            color: #fff;
+            padding: 15px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15.5px;
+            transition: border-color 0.18s, background 0.18s, color 0.18s, transform 0.18s;
+        }
+
+        .btn-outline-light:hover {
+            border-color: var(--bright-green);
+            background: var(--bright-green);
+            color: var(--dark-green);
+            transform: translateY(-1px);
+        }
+
+        .hero-call {
+            margin-top: 22px;
+            font-size: 15.5px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .hero-call a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--brand-green);
+            padding-bottom: 1px;
+        }
+
+        .hero-call a:hover {
+            color: var(--bright-green);
+        }
+
+        /* ==================== TICKS STRIP ==================== */
+        .ticks {
+            background: var(--bright-green);
+        }
+
+        .ticks ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px 40px;
+            list-style: none;
+            padding: 15px 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ticks li {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--dark-green);
+        }
+
+        /* ==================== SERVICES SPLIT ==================== */
+        .services-section {
+            padding: 92px 2rem;
+        }
+
+        .services-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 0.92fr 1.08fr;
+            gap: 62px;
+            align-items: center;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--medium-green);
+            margin-bottom: 16px;
+        }
+
+        .section-eyebrow::after {
+            content: "";
+            height: 1px;
+            width: 58px;
+            background: currentColor;
+            opacity: 0.45;
+        }
+
+        .services-left h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+
+        .services-left h2 .hl {
+            color: var(--brand-green);
+        }
+
+        .services-left .lede {
+            color: var(--gray-500);
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .tick-list {
+            list-style: none;
+            margin: 26px 0 30px;
+            display: grid;
+            gap: 13px;
+        }
+
+        .tick-list li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .tick-list svg {
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .tick-list strong {
+            display: block;
+            font-weight: 600;
+            color: var(--dark-green);
+        }
+
+        .tick-list span {
+            color: var(--gray-500);
+            font-size: 15px;
+        }
+
+        .btn-service {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            background: var(--brand-green);
+            color: #10240b;
+            padding: 14px 26px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            transition: background 0.18s, transform 0.18s;
+        }
+
+        .btn-service:hover {
+            background: #6cb94a;
+            transform: translateY(-1px);
+        }
+
+        /* Photo cluster */
+        .cluster {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .cluster figure {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 26px rgba(22,53,28,0.13);
+            margin: 0;
+        }
+
+        .cluster figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cluster .p-tall {
+            aspect-ratio: 3 / 4.1;
+        }
+
+        .cluster .p-wide {
+            grid-column: 1 / 4;
+            aspect-ratio: 16 / 8.4;
+            margin-top: -34px;
+            border: 5px solid var(--white);
+        }
+
+        /* ==================== PROCESS ==================== */
+        .process-section {
+            padding: 92px 2rem;
+            background: var(--bright-green);
+        }
+
+        .section-head {
+            text-align: center;
+            max-width: 62ch;
+            margin: 0 auto 52px;
+        }
+
+        .section-head .eyebrow-centred {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--dark-green);
+            margin-bottom: 16px;
+        }
+
+        .section-head .eyebrow-centred::before {
+            content: "";
+            height: 1px;
+            width: 58px;
+            background: currentColor;
+            opacity: 0.45;
+        }
+
+        .section-head .eyebrow-centred::after {
+            content: "";
+            height: 1px;
+            width: 58px;
+            background: currentColor;
+            opacity: 0.45;
+        }
+
+        .section-head h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        .section-head .lede {
+            color: var(--dark-green);
+            opacity: 0.75;
+            font-size: 1rem;
+        }
+
+        .steps {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .step {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 30px 28px 32px;
+            box-shadow: 0 6px 20px rgba(22,53,28,0.10);
+        }
+
+        .step-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .step-num {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--brand-green);
+            color: #fff;
+            font-weight: 800;
+            font-size: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--medium-green);
+        }
+
+        .step h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 9px;
+        }
+
+        .step p {
+            color: var(--gray-500);
+            font-size: 15.5px;
+        }
+
+        /* ==================== AREAS ==================== */
+        .areas {
+            background: var(--medium-green);
+            padding: 3rem 2rem;
+        }
+
+        .areas-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .areas h2 {
+            color: var(--white);
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+        }
+
+        .areas-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        .area-tag {
+            background: rgba(255,255,255,0.18);
+            color: var(--white);
+            padding: 0.45rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: background 0.2s, color 0.2s;
+            cursor: default;
+        }
+
+        .area-tag:hover {
+            background: var(--white);
+            color: var(--medium-green);
+        }
+
+        /* ==================== BLOG ==================== */
+        .blog-section {
+            padding: 92px 2rem;
+            background: var(--white);
+        }
+
+        .blog-section-head {
+            text-align: center;
+            max-width: 62ch;
+            margin: 0 auto 52px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: var(--light-green-text-bg);
+            color: var(--medium-green);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-section-head h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-section-head p {
+            color: var(--gray-500);
+            font-size: 1rem;
+        }
+
+        .blog-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 2px solid var(--gray-200);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .blog-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+            transform: translateY(-3px);
+        }
+
+        .blog-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blog-card-body {
+            padding: 1.25rem 1.5rem 1.5rem;
+        }
+
+        .blog-tag {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--medium-green);
+        }
+
+        .blog-card-body h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin: 0.5rem 0;
+            line-height: 1.3;
+        }
+
+        .blog-card-body p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .blog-read-more {
+            color: var(--medium-green);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .blog-read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* ==================== REVIEWS + HOURS ==================== */
+        .reviews-section {
+            padding: 92px 2rem;
+            background: var(--gray-50);
+        }
+
+        .reviews-section-head {
+            text-align: center;
+            max-width: 62ch;
+            margin: 0 auto 52px;
+        }
+
+        .reviews-section-head h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .reviews-section-head .hl {
+            color: var(--brand-green);
+        }
+
+        .reviews-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.55fr 0.85fr;
+            gap: 34px;
+            align-items: start;
+        }
+
+        .review-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .review-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 13px;
+            padding: 24px 24px 22px;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .review-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+
+        .review-stars {
+            color: #facc15;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .review-card p {
+            margin: 11px 0 16px;
+            font-size: 15.5px;
+            color: #3c4238;
+        }
+
+        .review-who {
+            font-size: 14px;
+            color: var(--gray-500);
+        }
+
+        .review-who strong {
+            color: var(--gray-800);
+            font-weight: 600;
+        }
+
+        .more-reviews {
+            margin-top: 20px;
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 2px solid var(--gray-200);
+            background: var(--white);
+            color: var(--gray-800);
+            padding: 12px 24px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: border-color 0.18s, transform 0.18s;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--brand-green);
+            transform: translateY(-1px);
+        }
+
+        /* Hours sidebar */
+        .hours {
+            background: var(--dark-green);
+            color: #fff;
+            border-radius: 15px;
+            padding: 30px 28px;
+        }
+
+        .hours h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 20px;
+        }
+
+        .hours-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.09);
+            font-size: 15px;
+        }
+
+        .hours-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--brand-green);
+            flex-shrink: 0;
+        }
+
+        .hours-dot.off {
+            background: #5c6659;
+        }
+
+        .hours-row .day {
+            font-weight: 600;
+        }
+
+        .hours-row .time {
+            margin-left: auto;
+            color: rgba(255,255,255,0.65);
+        }
+
+        .hours-row .time.closed {
+            color: #7d8877;
+        }
+
+        .emergency {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            font-size: 12.5px;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.65);
+            padding: 18px 0 20px;
+        }
+
+        .emergency strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .advice-box {
+            background: #277a3b;
+            border-radius: 11px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .advice-box .lbl {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--bright-green);
+        }
+
+        .advice-box a {
+            display: block;
+            font-weight: 800;
+            font-size: 26px;
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0 3px;
+        }
+
+        .advice-box a:hover {
+            color: var(--bright-green);
+        }
+
+        .advice-box .note {
+            font-size: 13.5px;
+            color: rgba(255,255,255,0.65);
+        }
+
+        /* ==================== FAQ ==================== */
+        .faq {
+            padding: 92px 2rem;
+            background: var(--white);
+        }
+
+        .faq-head {
+            text-align: center;
+            max-width: 62ch;
+            margin: 0 auto 52px;
+        }
+
+        .faq-head h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-head p {
+            color: var(--gray-500);
+            font-size: 1rem;
+        }
+
+        .faq-inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+        }
+
+        .faq-item.open {
+            border-color: var(--medium-green);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: var(--white);
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark-green);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background: var(--light-green-bg);
+        }
+
+        .faq-chevron {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.2rem;
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ==================== LOCATION / MAP ==================== */
+        .location {
+            background: var(--bright-green);
+            padding: 92px 2rem;
+        }
+
+        .location-head {
+            text-align: center;
+            max-width: 62ch;
+            margin: 0 auto 52px;
+        }
+
+        .location-head h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        .location-head .lede {
+            color: var(--dark-green);
+            opacity: 0.75;
+            font-size: 1rem;
+        }
+
+        .map-frame {
+            background: var(--dark-green);
+            border-radius: 18px;
+            padding: 16px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 14px 34px rgba(22,53,28,0.20);
+        }
+
+        .map-inner {
+            background: var(--light-green-bg);
+            border-radius: 11px;
+            aspect-ratio: 16 / 8;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .map-inner iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .map-caption {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 16px 6px 2px;
+            color: #fff;
+        }
+
+        .map-caption .addr {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15.5px;
+        }
+
+        .map-caption .addr strong {
+            font-weight: 600;
+        }
+
+        .map-caption a {
+            color: var(--bright-green);
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .map-caption a:hover {
+            text-decoration: underline;
+        }
+
+        /* ==================== CONTACT ==================== */
+        .contact {
+            padding: 92px 2rem;
+            background: var(--gray-50);
+        }
+
+        .contact-head {
+            text-align: center;
+            max-width: 62ch;
+            margin: 0 auto 52px;
+        }
+
+        .contact-head h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-head p {
+            color: var(--gray-500);
+            font-size: 1rem;
+        }
+
+        .contact-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-form-wrap {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+
+        .contact-form-wrap h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-wrap > p {
+            color: var(--gray-500);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 0.35rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: border-color 0.2s;
+            background: var(--white);
+            color: var(--gray-800);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--medium-green);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn-form-submit {
+            width: 100%;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            background: var(--medium-green);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.18s;
+        }
+
+        .btn-form-submit:hover {
+            background: var(--dark-green);
+            transform: translateY(-1px);
+        }
+
+        .contact-details {
+            padding: 0.5rem 0;
+        }
+
+        .contact-details h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: var(--light-green-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-info-text strong {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--dark-green);
+            margin-bottom: 0.15rem;
+        }
+
+        .contact-info-text span,
+        .contact-info-text a {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            text-decoration: none;
+        }
+
+        .contact-info-text a:hover {
+            color: var(--medium-green);
+        }
+
+        .contact-hours {
+            background: var(--light-green-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact-hours h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.3rem 0;
+            font-size: 0.9rem;
+        }
+
+        .contact-hours-row .day {
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        .contact-hours-row .time {
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: var(--dark-green);
+            color: rgba(255,255,255,0.6);
+        }
+
+        .footer-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 58px 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 46px;
+            padding-bottom: 42px;
+        }
+
+        .footer-logo-col img {
+            height: 58px;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo-col p {
+            font-size: 15px;
+            max-width: 40ch;
+            line-height: 1.65;
+        }
+
+        .footer-col h4 {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 9px;
+            font-size: 15px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 2rem 26px;
+            border-top: 1px solid rgba(255,255,255,0.10);
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 13.5px;
+            color: rgba(255,255,255,0.35);
+        }
+
+        /* ==================== STICKY MOBILE CALL BAR ==================== */
+        .callbar {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 950;
+            background: var(--brand-green);
+            border-top: 3px solid var(--dark-green);
+        }
+
+        .callbar a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 15px 8px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #10240b;
+            text-decoration: none;
+        }
+
+        .callbar a + a {
+            border-left: 2px solid rgba(0,0,0,0.18);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 1000px) {
+            .services-wrap {
+                grid-template-columns: 1fr;
+                gap: 44px;
+            }
+
+            .reviews-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .cluster .p-wide {
+                margin-top: 0;
+                grid-column: 1 / 4;
+                aspect-ratio: 16 / 7;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .topbar ul li:not(:first-child) {
+                display: none;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-phone {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-inner {
+                height: 60px;
+            }
+
+            .hero-wrap {
+                padding: 56px 1.5rem 50px;
+            }
+
+            .hero-actions .btn-primary,
+            .hero-actions .btn-outline-light {
+                flex: 1 1 100%;
+            }
+
+            .services-section {
+                padding: 58px 1.5rem;
+            }
+
+            .process-section {
+                padding: 58px 1.5rem;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .areas {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .blog-section {
+                padding: 58px 1.5rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .reviews-section {
+                padding: 58px 1.5rem;
+            }
+
+            .review-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .faq {
+                padding: 58px 1.5rem;
+            }
+
+            .location {
+                padding: 58px 1.5rem;
+            }
+
+            .map-inner {
+                aspect-ratio: 4 / 3.4;
+            }
+
+            .contact {
+                padding: 58px 1.5rem;
+            }
+
+            .contact-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-form-wrap {
+                padding: 1.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .callbar {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 62px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .areas h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition-duration: .01ms !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="topbar-inner">
+            <ul>
+                <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    Fully insured
+                </li>
+                <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    Qualified electrician
+                </li>
+                <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    Free quotations
+                </li>
+                <li>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    Certification provided
+                </li>
+            </ul>
+            <span>Folkestone &amp; East Kent &middot; <a href="tel:01303770445" class="topbar-phone">01303 770 445</a></span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav-outer">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="gilly-logo-trans.png" alt="Gilly's Electrical" style="height:58px;">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:01303770445" class="nav-phone">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    01303 770 445
+                </a>
+                <a href="#contact" class="nav-cta">Get a Free Quote</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-wrap">
+            <p class="eyebrow">Electrical &amp; ventilation &middot; Folkestone</p>
+            <h1>Electrician &amp; <span class="hl">Ventilation Specialist</span> in Folkestone</h1>
+            <p class="hero-sub">Electrical services, extractor fans, ventilation systems and condensation solutions for homes, landlords and businesses across East Kent.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Book a free quote</a>
+                <a href="#services" class="btn-outline-light">View our services</a>
+            </div>
+            <p class="hero-call">Prefer to call? <a href="tel:01303770445">01303 770 445</a></p>
+        </div>
+    </section>
+
+    <!-- TICKS STRIP -->
+    <div class="ticks">
+        <ul>
+            <li>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                EICR certificates
+            </li>
+            <li>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                Consumer unit upgrades
+            </li>
+            <li>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                Rewires &amp; fault finding
+            </li>
+            <li>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                Extractor fans &amp; ventilation
+            </li>
+        </ul>
+    </div>
+
+    <!-- SERVICES SPLIT -->
+    <section class="services-section" id="services">
+        <div class="services-wrap">
+            <div class="services-left">
+                <p class="section-eyebrow">Wide range of electrical services</p>
+                <h2>Do you need an <span class="hl">electrician?</span><br>Look no further.</h2>
+                <p class="lede">Fully qualified, fully insured, and working across Folkestone and East Kent. From a single socket to a full rewire, and the ventilation work most electricians won't touch.</p>
+
+                <ul class="tick-list">
+                    <li>
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        <div>
+                            <strong>Domestic &amp; commercial electrical work</strong>
+                            <span>EICRs, consumer units, fault finding, rewires, emergency repairs, smoke alarms and commercial installations.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        <div>
+                            <strong>Ventilation &amp; condensation control</strong>
+                            <span>Extractor fans, PIV units and full ventilation systems that deal with damp and mould at the cause.</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="#contact" class="btn-service">Get a free quote</a>
+            </div>
+
+            <div class="cluster">
+                <figure class="p-tall"><img src="gilly-photo1.jpg" alt="Electrical fault finding and diagnostics"></figure>
+                <figure class="p-tall"><img src="gilly-photo2.jpg" alt="Consumer unit and fuse board work"></figure>
+                <figure class="p-tall"><img src="gilly-photo3.jpg" alt="EICR inspection and testing"></figure>
+                <figure class="p-wide"><img src="gilly-photo4.jpg" alt="Gilly's Electrical on site in Folkestone"></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS: HOW IT WORKS -->
+    <section class="process-section" id="process">
+        <div class="section-head">
+            <p class="eyebrow-centred">What you can expect</p>
+            <h2>How it works</h2>
+            <p class="lede">Three steps from first call to certificate. No jargon, no pressure, no surprise pricing.</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-badge">
+                    <span class="step-num">1</span>
+                    <span class="step-label">Step one</span>
+                </div>
+                <h3>Give us a ring</h3>
+                <p>Tell us what you need. You'll get honest advice on the spot and a straight answer about whether it's a job worth doing.</p>
+            </div>
+            <div class="step">
+                <div class="step-badge">
+                    <span class="step-num">2</span>
+                    <span class="step-label">Step two</span>
+                </div>
+                <h3>Free written quote</h3>
+                <p>We'll price the work clearly and in writing before anything starts, so you know exactly where you stand.</p>
+            </div>
+            <div class="step">
+                <div class="step-badge">
+                    <span class="step-num">3</span>
+                    <span class="step-label">Step three</span>
+                </div>
+                <h3>Job done &amp; certified</h3>
+                <p>Work carried out to current regulations, the site left clean and tidy, and your certification issued on completion.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AREAS WE COVER -->
+    <div class="areas">
+        <div class="areas-inner">
+            <h2>Areas We Cover Across Kent</h2>
+            <div class="areas-tags">
+                <span class="area-tag">Folkestone</span>
+                <span class="area-tag">Hythe</span>
+                <span class="area-tag">Dover</span>
+                <span class="area-tag">Ashford</span>
+                <span class="area-tag">Canterbury</span>
+                <span class="area-tag">Deal</span>
+                <span class="area-tag">Hawkinge</span>
+                <span class="area-tag">Sandgate</span>
+                <span class="area-tag">Cheriton</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG -->
+    <section class="blog-section" id="blog">
+        <div class="blog-section-head">
+            <span class="section-label">Latest News</span>
+            <h2>From the Blog</h2>
+            <p>Tips, guides, and updates from our team of qualified electricians.</p>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="gilly-photo3.jpg" alt="EICR certificate guide" class="blog-card-img">
+                <div class="blog-card-body">
+                    <span class="blog-tag">August 2026</span>
+                    <h3>Why You Need an EICR Certificate</h3>
+                    <p>An Electrical Installation Condition Report is essential for landlords and homeowners. Here's what you need to know about staying compliant.</p>
+                    <a href="#" class="blog-read-more">Read more</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="gilly-photo2.jpg" alt="Ventilation solutions" class="blog-card-img">
+                <div class="blog-card-body">
+                    <span class="blog-tag">July 2026</span>
+                    <h3>Ventilation Solutions for Condensation</h3>
+                    <p>Struggling with damp and mould? Proper ventilation can solve the problem for good. We explain the options available for your home.</p>
+                    <a href="#" class="blog-read-more">Read more</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="gilly-photo1.jpg" alt="Consumer unit upgrades" class="blog-card-img">
+                <div class="blog-card-body">
+                    <span class="blog-tag">June 2026</span>
+                    <h3>Consumer Unit Upgrades Explained</h3>
+                    <p>Still got an old fuse box? A consumer unit upgrade keeps your home safe and brings your electrics up to current regulations.</p>
+                    <a href="#" class="blog-read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS + WORKING HOURS -->
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-section-head">
+            <span class="section-label">Customer Reviews</span>
+            <h2>What our <span class="hl">customers say</span></h2>
+        </div>
+        <div class="reviews-layout">
+            <div>
+                <div class="review-cards">
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Upgraded our consumer unit quickly and professionally, and the price was very fair. Would recommend to anyone in the Folkestone area.</p>
+                        <p class="review-who"><strong>Sarah M.</strong> &middot; Folkestone</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Called out for an emergency repair on a Saturday and was here within the hour. Sorted it and explained everything clearly.</p>
+                        <p class="review-who"><strong>James T.</strong> &middot; Hythe</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Extractor fans fitted in the bathroom and kitchen for condensation. No more mould on the windows, and very tidy work throughout.</p>
+                        <p class="review-who"><strong>Karen L.</strong> &middot; Dover</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>Did the EICR on two of our rental properties. Turned up when he said he would and the paperwork came through the same day.</p>
+                        <p class="review-who"><strong>Placeholder</strong> &middot; replace with a real review</p>
+                    </div>
+                </div>
+                <div class="more-reviews">
+                    <a href="#" class="btn-outline">Read more reviews</a>
+                </div>
+            </div>
+
+            <aside class="hours" id="hours">
+                <h3>
+                    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    Working hours
+                </h3>
+                <div class="hours-row"><span class="hours-dot"></span><span class="day">Monday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="hours-dot"></span><span class="day">Tuesday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="hours-dot"></span><span class="day">Wednesday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="hours-dot"></span><span class="day">Thursday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="hours-dot"></span><span class="day">Friday</span><span class="time">9:00 am &mdash; 5:00 pm</span></div>
+                <div class="hours-row"><span class="hours-dot off"></span><span class="day">Saturday</span><span class="time closed">Closed</span></div>
+                <div class="hours-row"><span class="hours-dot off"></span><span class="day">Sunday</span><span class="time closed">Closed</span></div>
+
+                <div class="emergency">
+                    <span>Emergency call-outs</span>
+                    <strong>By arrangement</strong>
+                </div>
+
+                <div class="advice-box">
+                    <p class="lbl">Call for advice</p>
+                    <a href="tel:01303770445">01303 770 445</a>
+                    <p class="note">Quotes by phone or email</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="faq-head">
+            <span class="section-label">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Answers to the most common questions about our electrical and ventilation services.</p>
+        </div>
+        <div class="faq-inner">
+            <div class="faq-item">
+                <button class="faq-question">
+                    How much does an electrician cost?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Costs vary depending on the type of work required. We provide free no-obligation quotations so you know exactly what to expect before any work begins. Get in touch with the details of your job and we will give you an honest, competitive price.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you provide EICR certificates?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Yes, we carry out Electrical Installation Condition Reports (EICRs) for landlords, homeowners, and commercial properties. These are required by law for rental properties and help ensure your electrics are safe and up to standard.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can you install extractor fans?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Absolutely. We install extractor fans in bathrooms, kitchens, and utility rooms. We can fit standard, timer, and humidity-controlled models depending on your needs and help you choose the right option for your space.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can ventilation help reduce mould?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Yes, poor ventilation is one of the leading causes of condensation and mould in homes. Installing the right ventilation system — whether extractor fans, positive input ventilation, or mechanical ventilation — can dramatically reduce moisture levels and prevent mould from forming.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are you fully insured?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Yes, we carry full public liability insurance, giving you complete peace of mind. All work is carried out to the highest safety standards and comes with the relevant electrical certification.</div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you work with landlords?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Yes, we regularly work with landlords and letting agents across Kent. We provide EICR certificates, smoke alarm installations, consumer unit upgrades, and general electrical maintenance for rental properties. We understand the legal requirements and can help you stay compliant.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION / MAP -->
+    <section class="location" id="location">
+        <div class="location-head">
+            <p class="eyebrow-centred">Areas covered</p>
+            <h2>Find us</h2>
+            <p class="lede">Based in Folkestone, covering Hythe, Dover, Ashford, Canterbury, Deal, Hawkinge, Sandgate and Cheriton. Not sure if you're in range? Give us a ring.</p>
+        </div>
+        <div class="map-frame">
+            <div class="map-inner">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156.61150544571746!2d1.140875505735024!3d51.093992082954166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deb8b5ae7f508b%3A0x452ace3942022788!2s41%20Charles%20Cres%2C%20Folkestone%20CT19%204NG!5e0!3m2!1sen!2suk!4v1761557420424!5m2!1sen!2suk"
+                    title="Gilly's Electrical, 41 Charles Crescent, Folkestone CT19 4NG"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="map-caption">
+                <p class="addr">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span><strong>41 Charles Crescent</strong>, Folkestone, Kent CT19 4NG</span>
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=41+Charles+Crescent+Folkestone+CT19+4NG" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-head">
+            <span class="section-label">Get In Touch</span>
+            <h2>Request a Free Quote</h2>
+            <p>Fill in the form or give us a call. We aim to respond to all enquiries within a few hours.</p>
+        </div>
+        <div class="contact-inner">
+            <div class="contact-form-wrap">
+                <h3>Send Us a Message</h3>
+                <p>We will get back to you as soon as possible.</p>
+                <form onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g. John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="e.g. 07700 900000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell us about the work you need..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-form-submit">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Phone</strong>
+                        <a href="tel:01303770445">01303 770 445</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Email</strong>
+                        <a href="mailto:info@gillyselectrical.co.uk">info@gillyselectrical.co.uk</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Location</strong>
+                        <span>Folkestone, Kent</span>
+                    </div>
+                </div>
+                <div class="contact-hours">
+                    <h4>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Opening Hours
+                    </h4>
+                    <div class="contact-hours-row">
+                        <span class="day">Monday &ndash; Friday</span>
+                        <span class="time">9am &ndash; 5pm</span>
+                    </div>
+                    <div class="contact-hours-row">
+                        <span class="day">Saturday</span>
+                        <span class="time">Closed</span>
+                    </div>
+                    <div class="contact-hours-row">
+                        <span class="day">Sunday</span>
+                        <span class="time">Closed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="footer-grid">
+                <div class="footer-logo-col">
+                    <img src="gilly-logo-light.png" alt="Gilly's Electrical">
+                    <p>Electrician and ventilation specialist serving Folkestone, Hythe, Dover, Ashford, Canterbury and the wider East Kent area. Fully insured and qualified.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">EICR certificates</a></li>
+                        <li><a href="#services">Consumer unit upgrades</a></li>
+                        <li><a href="#services">Rewires</a></li>
+                        <li><a href="#services">Fault finding</a></li>
+                        <li><a href="#services">Extractor fans</a></li>
+                        <li><a href="#services">Condensation solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get in touch</h4>
+                    <ul>
+                        <li><a href="tel:01303770445">01303 770 445</a></li>
+                        <li><a href="mailto:info@gillyselectrical.co.uk">info@gillyselectrical.co.uk</a></li>
+                        <li>Folkestone, Kent</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Gilly's Electrical. All rights reserved.</span>
+            <span>Folkestone &middot; Hythe &middot; Dover &middot; Ashford &middot; Canterbury</span>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CALL BAR -->
+    <div class="callbar">
+        <a href="tel:01303770445">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            Call now
+        </a>
+        <a href="#contact">Free quote</a>
+    </div>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var item = this.parentElement;
+                var answer = item.querySelector('.faq-answer');
+                var isOpen = item.classList.contains('open');
+
+                document.querySelectorAll('.faq-item').forEach(function(faq) {
+                    faq.classList.remove('open');
+                    faq.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Mobile nav toggle
+        var navToggle = document.getElementById('navToggle');
+        var navLinks = document.getElementById('navLinks');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                var shown = navLinks.style.display === 'flex';
+                if (shown) {
+                    navLinks.style.display = '';
+                    return;
+                }
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '60px';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = '#ffffff';
+                navLinks.style.padding = '16px 26px';
+                navLinks.style.gap = '10px';
+                navLinks.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                navLinks.style.zIndex = '999';
+                navLinks.style.borderBottom = '1px solid #e5e7eb';
+            });
+        }
+
+        // Close mobile nav when a link is clicked
+        navLinks.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.style.display = '';
+            });
+        });
+    </script>
+</body>
+</html>
