@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Gilly's Electrical</title>
+    <meta name="description" content="Contact Gilly's Electrical for a free quote. Call 01303 770 445 or send us a message. Electrician in Folkestone, Kent — Mon–Fri 8am–6pm, Sat 9am–2pm.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-green: #1d632e;
+            --brand-green: #72a732;
+            --medium-green: #547f1f;
+            --bright-green: #9ce2ae;
+            --light-green-bg: #edf8f0;
+            --light-green-text-bg: #cbeed6;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ==================== NAV ==================== */
+        .nav {
+            background: var(--white);
+            border-bottom: 2px solid var(--light-green-bg);
+            padding: 0 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--dark-green);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .nav-phone:hover {
+            color: var(--medium-green);
+        }
+
+        .nav-cta {
+            background: var(--medium-green);
+            color: var(--white);
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--bright-green);
+            color: var(--dark-green);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--medium-green);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        /* ==================== HERO BANNER ==================== */
+        .page-hero {
+            background: var(--medium-green);
+            padding: 3.5rem 2rem;
+        }
+
+        .page-hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+            font-size: 0.85rem;
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--bright-green);
+        }
+
+        .breadcrumb-sep {
+            color: rgba(255,255,255,0.4);
+        }
+
+        .breadcrumb-current {
+            color: var(--bright-green);
+            font-weight: 600;
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.15;
+            margin-bottom: 0.75rem;
+        }
+
+        .page-hero p {
+            color: rgba(255,255,255,0.82);
+            font-size: 1.1rem;
+            max-width: 560px;
+            line-height: 1.6;
+        }
+
+        /* ==================== CONTACT SECTION ==================== */
+        .contact-main {
+            padding: 5rem 2rem;
+            background: var(--gray-50);
+        }
+
+        .contact-main-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        /* Form */
+        .contact-form-wrap {
+            background: var(--white);
+            padding: 2.75rem;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+        }
+
+        .contact-form-wrap h2 {
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 0.4rem;
+        }
+
+        .contact-form-wrap > p {
+            color: var(--gray-500);
+            font-size: 0.93rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: var(--white);
+            color: var(--gray-800);
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .form-group select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.9rem center;
+            padding-right: 2.5rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--medium-green);
+            box-shadow: 0 0 0 3px rgba(84,127,31,0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .btn-primary {
+            background: var(--medium-green);
+            color: var(--white);
+            padding: 0.9rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary:hover {
+            background: var(--bright-green);
+            color: var(--dark-green);
+            transform: translateY(-1px);
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 0.5rem;
+            justify-content: center;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.83rem;
+            color: var(--gray-400);
+        }
+
+        /* Contact Details */
+        .contact-details {
+            padding: 0.5rem 0;
+        }
+
+        .contact-details h2 {
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 1.75rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .contact-info-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--light-green-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-info-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .contact-info-text strong {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 0.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .contact-info-text span,
+        .contact-info-text a {
+            font-size: 1rem;
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info-text a:hover {
+            color: var(--medium-green);
+        }
+
+        .contact-hours {
+            background: var(--light-green-bg);
+            border-radius: 14px;
+            padding: 1.75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-hours h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.45rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(29,99,46,0.1);
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .hours-row .day {
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        .hours-row .time {
+            color: var(--dark-green);
+            font-weight: 700;
+        }
+
+        .emergency-note {
+            background: var(--light-green-text-bg);
+            border-left: 4px solid var(--medium-green);
+            border-radius: 0 10px 10px 0;
+            padding: 1rem 1.25rem;
+        }
+
+        .emergency-note p {
+            font-size: 0.9rem;
+            color: var(--dark-green);
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .emergency-note strong {
+            color: var(--dark-green);
+        }
+
+        /* ==================== MAP PLACEHOLDER ==================== */
+        .map-section {
+            padding: 0 2rem 5rem;
+            background: var(--gray-50);
+        }
+
+        .map-section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-section-inner iframe {
+            width: 100%;
+            height: 320px;
+            border: 0;
+            border-radius: 16px;
+        }
+
+        /* ==================== FAQ ==================== */
+        .faq {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: var(--light-green-text-bg);
+            color: var(--medium-green);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--dark-green);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header p {
+            color: var(--gray-500);
+            max-width: 560px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+        }
+
+        .faq-inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        .faq-item.open {
+            border-color: var(--medium-green);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: var(--white);
+            border: none;
+            padding: 1.2rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark-green);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background: var(--light-green-bg);
+        }
+
+        .faq-chevron {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.2rem;
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: var(--dark-green);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-left .footer-logo {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-left p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            max-width: 360px;
+            line-height: 1.6;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social-link {
+            color: rgba(255,255,255,0.6);
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-social-link:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-social-link svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .footer-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--bright-green);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-col .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        .footer-col .footer-contact-item a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col .footer-contact-item a:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-col .footer-contact-item svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.35);
+            font-size: 0.8rem;
+        }
+
+        /* ==================== MOBILE FLOATING BUTTONS ==================== */
+        .mobile-float-call,
+        .mobile-float-whatsapp {
+            display: none;
+            position: fixed;
+            bottom: 1.25rem;
+            z-index: 9999;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .mobile-float-call {
+            left: 1rem;
+            background: var(--medium-green);
+        }
+
+        .mobile-float-whatsapp {
+            right: 1rem;
+            background: #25D366;
+            padding: 0.75rem;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            justify-content: center;
+        }
+
+        .mobile-float-call:hover,
+        .mobile-float-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-phone {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-inner {
+                height: 60px;
+            }
+
+            .page-hero {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero p {
+                font-size: 1rem;
+            }
+
+            .contact-main {
+                padding: 3rem 1.5rem;
+            }
+
+            .contact-main-inner {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .contact-form-wrap {
+                padding: 1.75rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .map-section {
+                padding: 0 1.5rem 3.5rem;
+            }
+
+            .map-section-inner iframe {
+                height: 240px;
+            }
+
+            .faq {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.7rem;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-right {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+
+            .mobile-float-call,
+            .mobile-float-whatsapp {
+                display: flex;
+            }
+
+            .footer {
+                padding-bottom: 5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .footer-right {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrap {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="gillys-electrical-2.html" class="nav-logo">
+                <img src="gilly-logo-trans.png" alt="Gilly's Electrical" style="height:58px;display:block;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="areas.html">Areas</a></li>
+                <li><a href="gillys-electrical-2.html#reviews">Reviews</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:01303770445" class="nav-phone">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    01303 770 445
+                </a>
+                <a href="#contact-form" class="nav-cta">Get a Free Quote</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="gillys-electrical-2.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <span class="breadcrumb-current">Contact</span>
+            </nav>
+            <h1>Get In Touch</h1>
+            <p>Have a question or need a quote? We'd love to hear from you. Give us a call or fill in the form below.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT MAIN -->
+    <section class="contact-main" id="contact-form">
+        <div class="contact-main-inner">
+
+            <!-- LEFT: Form -->
+            <div class="contact-form-wrap">
+                <h2>Send Us a Message</h2>
+                <p>Fill in the form and we'll get back to you as soon as possible.</p>
+                <form onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Smith" autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. john@example.com" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900 000" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service">
+                            <option value="" disabled selected>Please select a service...</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="eicr">EICR Certificate</option>
+                            <option value="consumer-unit">Consumer Unit Upgrade</option>
+                            <option value="fault-finding">Fault Finding</option>
+                            <option value="rewire">Rewire</option>
+                            <option value="emergency">Emergency Repair</option>
+                            <option value="commercial">Commercial Work</option>
+                            <option value="smoke-alarms">Smoke Alarms</option>
+                            <option value="extractor-fan">Extractor Fan</option>
+                            <option value="ventilation">Ventilation</option>
+                            <option value="condensation">Condensation Solutions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about the work you need, including your location if possible..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                        Send Message
+                    </button>
+                    <p class="form-note">We aim to respond to all enquiries within a few hours.</p>
+                </form>
+            </div>
+
+            <!-- RIGHT: Contact Details -->
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Phone</strong>
+                        <a href="tel:01303770445">01303 770 445</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Email</strong>
+                        <a href="mailto:info@gillyselectrical.co.uk">info@gillyselectrical.co.uk</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Location</strong>
+                        <span>41 Charles Crescent, Folkestone<br>Kent CT19 4NG</span>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon" style="background:#e8f0fe;">
+                        <svg viewBox="0 0 24 24" fill="#1877F2" width="22" height="22">
+                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.875v2.256h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Facebook</strong>
+                        <a href="https://www.facebook.com/gillys.electrical" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
+                    </div>
+                </div>
+
+                <div class="contact-hours">
+                    <h4>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Opening Hours
+                    </h4>
+                    <div class="hours-row">
+                        <span class="day">Mon – Fri</span>
+                        <span class="time">8am – 6pm</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Saturday</span>
+                        <span class="time">9am – 2pm</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Sunday</span>
+                        <span class="time">By arrangement</span>
+                    </div>
+                </div>
+
+                <div class="emergency-note">
+                    <p>
+                        <strong>Need an emergency electrician?</strong> Call us directly — we aim to respond to urgent callouts as quickly as possible.
+                        <br><br>
+                        <a href="tel:01303770445" style="color:var(--dark-green);font-weight:700;text-decoration:none;">&#9990; 01303 770 445</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER -->
+    <section class="map-section">
+        <div class="map-section-inner">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.5!2d1.1697!3d51.0856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47debd4cf8e13571%3A0xd5b2fd5e1e2b1b60!2s41%20Charles%20Crescent%2C%20Folkestone%20CT19%204NG!5e0!3m2!1sen!2suk!4v1"
+                width="100%"
+                height="320"
+                style="border:0; border-radius:16px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Gilly's Electrical - 41 Charles Crescent, Folkestone, Kent CT19 4NG">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <span class="section-label">FAQ</span>
+            <h2>Common Questions</h2>
+            <p>Answers to the questions we get asked most often.</p>
+        </div>
+        <div class="faq-inner">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What areas do you cover?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">We cover Folkestone and the wider East Kent area, including Hythe, Dover, Ashford, Canterbury, Deal, Hawkinge, Sandgate, Cheriton, and surrounding villages. If you're unsure whether we cover your location, give us a call and we'll be happy to let you know.</div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How quickly can you come out?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">For planned work we aim to schedule you in within a few days, depending on our current workload. For emergency callouts we do our best to respond as quickly as possible — call us directly on 01303 770 445 and we'll do everything we can to get to you fast.</div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer free quotes?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Yes, absolutely. We provide free, no-obligation quotations for all jobs. Simply fill in the contact form or give us a call with the details of what you need and we'll give you an honest, competitive price upfront — no hidden costs or surprises.</div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What are your payment terms?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Payment is typically due on completion of the work. We accept bank transfer and cash. For larger projects we may agree a deposit to cover materials before work begins. We'll always be clear about payment terms before any job starts.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="gilly-logo-light.png" alt="Gilly's Electrical" style="height:56px;margin-bottom:12px;display:block;">
+                </div>
+                <p>Professional electrician and ventilation specialist serving Folkestone, Hythe, Dover, and the wider Kent area. Fully insured, qualified, and committed to high-quality workmanship on every job.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/gillys.electrical" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Gilly's Electrical on Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.875v2.256h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="gillys-electrical-2.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="areas.html">Areas</a></li>
+                        <li><a href="gillys-electrical-2.html#reviews">Reviews</a></li>
+                        <li><a href="gillys-electrical-2.html#faq">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <a href="tel:01303770445">01303 770 445</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:info@gillyselectrical.co.uk">info@gillyselectrical.co.uk</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Folkestone, Kent CT19 4NG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Gilly's Electrical. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- MOBILE FLOATING BUTTONS -->
+    <a href="tel:01303770445" class="mobile-float-call" aria-label="Call Gilly's Electrical">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        Call Now
+    </a>
+    <a href="https://wa.me/441303770445" target="_blank" rel="noopener noreferrer" class="mobile-float-whatsapp" aria-label="WhatsApp Gilly's Electrical">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12.048 2.003C6.472 2.003 1.935 6.54 1.935 12.116c0 1.83.476 3.546 1.306 5.04L2 22l4.999-1.31a10.053 10.053 0 004.049.848h.003c5.576 0 10.112-4.537 10.112-10.113 0-2.703-1.052-5.244-2.961-7.153A10.065 10.065 0 0012.048 2zm0 18.44h-.002a8.35 8.35 0 01-4.255-1.164l-.305-.181-3.165.83.845-3.087-.199-.317A8.34 8.34 0 013.62 12.116c0-4.644 3.78-8.424 8.428-8.424 2.252 0 4.367.878 5.958 2.47a8.372 8.372 0 012.466 5.957c0 4.644-3.781 8.424-8.424 8.424z"/>
+        </svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var item = this.parentElement;
+                var answer = item.querySelector('.faq-answer');
+                var isOpen = item.classList.contains('open');
+
+                document.querySelectorAll('.faq-item').forEach(function(faq) {
+                    faq.classList.remove('open');
+                    faq.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        var menuBtn = document.querySelector('.mobile-menu-btn');
+        var navLinks = document.querySelector('.nav-links');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function() {
+                if (navLinks.style.display === 'flex') {
+                    navLinks.style.display = 'none';
+                } else {
+                    navLinks.style.display = 'flex';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '60px';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = '#ffffff';
+                    navLinks.style.padding = '1rem 2rem';
+                    navLinks.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                    navLinks.style.gap = '0.75rem';
+                    navLinks.style.zIndex = '999';
+                }
+            });
+
+            // Close menu when a link is clicked
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    navLinks.style.display = 'none';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
