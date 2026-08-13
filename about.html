@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us — Gilly's Electrical</title>
     <meta name="description" content="About Gilly's Electrical — your local, trusted electrician in Folkestone, Kent. Fully insured, reliable, and committed to quality workmanship on every job across East Kent.">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -189,7 +189,7 @@
         /* ==================== OUR STORY ==================== */
         .story {
             background: var(--white);
-            padding: 5rem 2rem;
+            padding: 4rem 2rem;
         }
 
         .story-inner {
@@ -197,7 +197,7 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: start;
         }
 
@@ -238,7 +238,6 @@
             gap: 2rem;
             margin-top: 2rem;
             padding-top: 2rem;
-            border-top: 1px solid var(--gray-200);
         }
 
         .story-highlight {
@@ -259,11 +258,16 @@
             font-weight: 500;
         }
 
+        .story-images {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
         .story-image {
             border-radius: 16px;
             overflow: hidden;
             border: 3px solid var(--medium-green);
-            aspect-ratio: 4/3;
         }
 
         .story-image img {
@@ -271,6 +275,14 @@
             height: 100%;
             object-fit: cover;
             display: block;
+        }
+
+        .story-image-main {
+            aspect-ratio: 4/3;
+        }
+
+        .story-image-secondary {
+            aspect-ratio: 16/7;
         }
 
         /* ==================== WHY CHOOSE US ==================== */
@@ -315,7 +327,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 1.25rem;
         }
 
@@ -364,15 +376,14 @@
             line-height: 1.6;
         }
 
-        /* span on row 2 to centre the 3 cards */
-        .benefits-grid .benefit-card:nth-child(5) {
-            grid-column: 1;
+        .benefits-grid .benefit-card:last-child {
+            grid-column: 2;
         }
 
         /* ==================== AREAS ==================== */
         .areas {
-            background: var(--medium-green);
-            padding: 3rem 2rem;
+            background: var(--white);
+            padding: 4rem 2rem;
         }
 
         .areas-inner {
@@ -382,7 +393,7 @@
         }
 
         .areas h2 {
-            color: var(--white);
+            color: var(--dark-green);
             font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 1.25rem;
@@ -396,19 +407,22 @@
         }
 
         .area-tag {
-            background: rgba(255,255,255,0.18);
-            color: var(--white);
+            background: var(--light-green-bg);
+            color: var(--dark-green);
             padding: 0.45rem 1.2rem;
             border-radius: 50px;
             font-size: 0.9rem;
             font-weight: 600;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1.5px solid transparent;
             transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
         }
 
         .area-tag:hover {
-            background: var(--white);
-            color: var(--medium-green);
+            background: var(--medium-green);
+            color: var(--white);
+            border-color: var(--dark-green);
         }
 
         /* ==================== CTA ==================== */
@@ -686,7 +700,7 @@
                 font-size: 1.7rem;
             }
 
-            .story-image {
+            .story-images {
                 order: -1;
             }
 
@@ -708,7 +722,7 @@
                 gap: 1rem;
             }
 
-            .benefits-grid .benefit-card:nth-child(5) {
+            .benefits-grid .benefit-card:last-child {
                 grid-column: auto;
             }
 
@@ -718,6 +732,7 @@
 
             .areas h2 {
                 font-size: 1.3rem;
+                color: var(--dark-green);
             }
 
             .cta-section {
@@ -860,8 +875,13 @@
                     </div>
                 </div>
             </div>
-            <div class="story-image">
-                <img src="gilly-photo4.jpg" alt="Gilly's Electrical at work in Folkestone">
+            <div class="story-images">
+                <div class="story-image story-image-main">
+                    <img src="gilly-photo4.jpg" alt="Gilly's Electrical at work in Folkestone">
+                </div>
+                <div class="story-image story-image-secondary">
+                    <img src="gilly-photo2.jpg" alt="Gilly's Electrical — quality workmanship in Kent">
+                </div>
             </div>
         </div>
     </section>
@@ -968,15 +988,15 @@
         <div class="areas-inner">
             <h2>Areas We Cover Across Kent</h2>
             <div class="areas-tags">
-                <span class="area-tag">Folkestone</span>
-                <span class="area-tag">Hythe</span>
-                <span class="area-tag">Dover</span>
-                <span class="area-tag">Ashford</span>
-                <span class="area-tag">Canterbury</span>
-                <span class="area-tag">Deal</span>
-                <span class="area-tag">Hawkinge</span>
-                <span class="area-tag">Sandgate</span>
-                <span class="area-tag">Cheriton</span>
+                <a href="folkestone.html" class="area-tag">Folkestone</a>
+                <a href="hythe.html" class="area-tag">Hythe</a>
+                <a href="dover.html" class="area-tag">Dover</a>
+                <a href="ashford.html" class="area-tag">Ashford</a>
+                <a href="canterbury.html" class="area-tag">Canterbury</a>
+                <a href="deal.html" class="area-tag">Deal</a>
+                <a href="hawkinge.html" class="area-tag">Hawkinge</a>
+                <a href="sandgate.html" class="area-tag">Sandgate</a>
+                <a href="cheriton.html" class="area-tag">Cheriton</a>
             </div>
         </div>
     </section>
