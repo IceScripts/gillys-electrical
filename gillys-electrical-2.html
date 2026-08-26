@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!--
+GMB OPTIMIZATION TODO (manual browser task):
+1. Verify business hours match site (Mon-Fri 9am-5pm, Sat-Sun closed)
+2. Add all 10 service categories to GMB
+3. Upload project photos
+4. Respond to Google reviews
+5. Ensure NAP consistency (Name, Address, Phone) matches site
+6. Add website URL and appointment link
+7. Write business description with target keywords
+8. Add service areas: Folkestone, Hythe, Dover, Ashford, Canterbury, Deal, Hawkinge, Sandgate, Cheriton
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -201,11 +212,11 @@
         .btn-primary {
             background: var(--medium-green);
             color: var(--white);
-            padding: 0.85rem 2rem;
+            padding: 1rem 2.2rem;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.05rem;
             transition: all 0.2s;
             display: inline-flex;
             align-items: center;
@@ -223,11 +234,11 @@
         .btn-secondary {
             background: var(--white);
             color: var(--dark-green);
-            padding: 0.85rem 2rem;
+            padding: 1rem 2.2rem;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.05rem;
             border: 2px solid var(--medium-green);
             transition: all 0.2s;
             display: inline-flex;
@@ -385,7 +396,7 @@
 
         /* ==================== AREAS ==================== */
         .areas {
-            background: var(--white);
+            background: var(--light-green-bg);
             padding: 5rem 2rem;
         }
 
@@ -1280,6 +1291,259 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* ==================== BLOG ==================== */
+        .blog-section {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .blog-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 2px solid var(--gray-200);
+            transition: all 0.3s;
+        }
+
+        .blog-card:hover {
+            border-color: var(--medium-green);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(114,167,50,0.1);
+        }
+
+        .blog-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-body {
+            padding: 1.25rem 1.5rem 1.5rem;
+        }
+
+        .blog-date {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--medium-green);
+        }
+
+        .blog-card-body h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin: 0.5rem 0;
+            line-height: 1.3;
+        }
+
+        .blog-card-body p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .blog-link {
+            color: var(--medium-green);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .blog-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .blog-section { padding: 3rem 1.5rem; }
+            .blog-grid { grid-template-columns: 1fr; gap: 1rem; }
+        }
+
+        /* ==================== LOCATION MAP ==================== */
+        .location-map {
+            padding: 5rem 2rem;
+            background: var(--light-green-bg);
+        }
+
+        .map-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 3px solid var(--medium-green);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            aspect-ratio: 16 / 9;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .location-map { padding: 3rem 1.5rem; }
+            .map-wrapper { aspect-ratio: 4 / 3; }
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: var(--dark-green);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .cta-banner-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .cta-banner h2 {
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+        }
+        .cta-banner p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .cta-banner .btn-white {
+            background: var(--white);
+            color: var(--dark-green);
+            padding: 1rem 2.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            border: 2px solid var(--white);
+        }
+        .cta-banner .btn-white:hover {
+            background: var(--bright-green);
+            border-color: var(--bright-green);
+        }
+        .cta-banner .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            padding: 1rem 2.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        .cta-banner .btn-outline-white:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Promise Section */
+        .promise {
+            background: var(--light-green-bg);
+            padding: 5rem 2rem;
+        }
+        .promise-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+        }
+        .promise-card {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 1.75rem 1.5rem;
+            border-left: 4px solid var(--brand-green);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            transition: all 0.3s;
+        }
+        .promise-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(114,167,50,0.1);
+        }
+        .promise-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .promise-card p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .trust-badges-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .trust-badge-item {
+            background: var(--light-green-text-bg);
+            color: var(--dark-green);
+            padding: 0.6rem 1.4rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Hero Google Rating */
+        .hero-google-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Mobile responsive additions */
+        @media (max-width: 768px) {
+            .promise-grid { grid-template-columns: 1fr; }
+            .cta-banner { padding: 3rem 1.5rem; }
+            .cta-banner h2 { font-size: 1.5rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .cta-banner .btn-white,
+            .cta-banner .btn-outline-white { width: 100%; justify-content: center; }
+        }
     </style>
 </head>
 <body>
@@ -1289,11 +1553,12 @@
         <div class="nav-inner">
             <a href="gillys-electrical-2.html" class="nav-logo"><img src="gilly-logo-trans.png" alt="Gilly's Electrical" style="height:58px;display:block;"></a>
             <ul class="nav-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="areas.html">Areas</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Our Work</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#reviews">Reviews</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-right">
                 <a href="tel:01303770445" class="nav-phone">
@@ -1326,6 +1591,11 @@
                     <span class="hero-badge">Free Quotations</span>
                     <span class="hero-badge">Certification Provided</span>
                 </div>
+                <div class="hero-google-rating">
+                    <span class="trust-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span style="font-weight:700;color:#1d632e;">5.0</span>
+                    <span style="color:#6b7280;font-size:0.85rem;">on Google</span>
+                </div>
                 <div class="hero-buttons">
                     <a href="tel:01303770445" class="btn-primary">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1356,7 +1626,7 @@
             <span class="trust-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span class="trust-rating">5.0 Rating</span>
             <div class="trust-divider"></div>
-            <span class="trust-reviews">Based on verified customer reviews</span>
+            <span class="trust-reviews">Based on Google reviews</span>
         </div>
     </div>
 
@@ -1438,11 +1708,136 @@
                     <p>New sockets, USB outlets, and switches installed safely and neatly. Ideal for home improvements, extensions, and additional power points.</p>
                 </div>
             </div>
+            <div class="service-card">
+                <img src="gilly-photo3.jpg" alt="Bathroom and kitchen electrics" class="service-card-img">
+                <div class="service-card-body">
+                    <h3>Bathroom &amp; Kitchen Electrics</h3>
+                    <p>Safe, compliant electrical installations for bathrooms and kitchens. From spotlights and heated towel rails to cooker connections and under-cabinet lighting.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="gilly-photo2.jpg" alt="Cooker point installation" class="service-card-img">
+                <div class="service-card-body">
+                    <h3>Cooker Points &amp; Electrical Ovens</h3>
+                    <p>Dedicated cooker circuits and connections for electric ovens, hobs, and range cookers. Installed safely to current regulations with certification provided.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="gilly-photo4.jpg" alt="Doorbell and camera system installation" class="service-card-img">
+                <div class="service-card-body">
+                    <h3>Doorbells &amp; Ring Camera Systems</h3>
+                    <p>Professional installation of smart doorbells, Ring cameras, and home security systems. Hardwired or wireless setups with clean, tidy cable management.</p>
+                </div>
+            </div>
         </div>
         <div class="services-extra">
             <a href="services.html" class="services-view-all">View All Services →</a>
         </div>
     </section>
+
+    <!-- CTA BANNER 1 -->
+    <section class="cta-banner">
+        <div class="cta-banner-inner">
+            <h2>Need an Electrician in Folkestone?</h2>
+            <p>Get a free, no-obligation quote today. We'll give you honest advice and a clear price.</p>
+            <div class="cta-buttons">
+                <a href="tel:01303770445" class="btn-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    Call 01303 770 445
+                </a>
+                <a href="#contact" class="btn-outline-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Request a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PROMISE -->
+    <section class="promise">
+        <div class="section-header">
+            <span class="section-label">Our Promise</span>
+            <h2>Our Promise to You</h2>
+            <p>We believe in honesty, reliability, and doing things right. Here's what you can expect from every job.</p>
+        </div>
+        <div class="promise-grid">
+            <div class="promise-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                    We'll Turn Up
+                </h3>
+                <p>We turn up for our appointments. No waiting around wondering if the electrician is going to show.</p>
+            </div>
+            <div class="promise-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                    Written Quotes
+                </h3>
+                <p>We provide you with a written quote before any work begins. No hidden charges, no surprises.</p>
+            </div>
+            <div class="promise-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                    Honest Advice
+                </h3>
+                <p>We give you honest advice, even if it means less work for us. Your best interest comes first.</p>
+            </div>
+            <div class="promise-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#72a732" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10"/>
+                    </svg>
+                    Respecting Your Property
+                </h3>
+                <p>We treat your home like our own. Dust sheets down, mess cleaned up, and your property left exactly as we found it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES -->
+    <div class="trust-badges">
+        <div class="trust-badges-inner">
+            <div class="trust-badge-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Part P Registered
+            </div>
+            <div class="trust-badge-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Competent Electrician
+            </div>
+            <div class="trust-badge-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Fully Insured
+            </div>
+            <div class="trust-badge-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Free Quotations
+            </div>
+        </div>
+    </div>
 
     <!-- WHY CHOOSE US -->
     <section class="why">
@@ -1548,6 +1943,44 @@
         </div>
     </section>
 
+    <!-- BLOG -->
+    <section class="blog-section" id="blog">
+        <div class="section-header">
+            <span class="section-label">Latest News</span>
+            <h2>From the Blog</h2>
+            <p>Tips, guides, and updates from our team of qualified electricians.</p>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="gilly-photo1.jpg" alt="EICR certificate guide" class="blog-card-img">
+                <div class="blog-card-body">
+                    <span class="blog-date">August 2026</span>
+                    <h3>Why You Need an EICR Certificate</h3>
+                    <p>An Electrical Installation Condition Report is essential for landlords and homeowners. Here's what you need to know about staying compliant.</p>
+                    <a href="#" class="blog-link">Read more →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="gilly-photo2.jpg" alt="Ventilation solutions for condensation" class="blog-card-img">
+                <div class="blog-card-body">
+                    <span class="blog-date">July 2026</span>
+                    <h3>Ventilation Solutions for Condensation</h3>
+                    <p>Struggling with damp and mould? Proper ventilation can solve the problem for good. We explain the options available for your home.</p>
+                    <a href="#" class="blog-link">Read more →</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="gilly-photo3.jpg" alt="Consumer unit upgrades explained" class="blog-card-img">
+                <div class="blog-card-body">
+                    <span class="blog-date">June 2026</span>
+                    <h3>Consumer Unit Upgrades Explained</h3>
+                    <p>Still got an old fuse box? A consumer unit upgrade keeps your home safe and brings your electrics up to current regulations.</p>
+                    <a href="#" class="blog-link">Read more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- RECENT PROJECTS -->
     <section class="projects-section" id="projects">
         <div class="section-header">
@@ -1598,44 +2031,34 @@
         </div>
         <div class="reviews-inner">
             <div class="review-slider-wrap">
-            <button class="review-arrow review-arrow-prev" onclick="goToSlide((currentSlide - 1 + 3) % 3)">&#8592;</button>
-            <div class="review-slider">
-                <div class="review-track" id="reviewTrack">
-                    <div class="review-slide">
-                        <div class="review-card-full">
-                            <div class="review-quote-icon">"</div>
-                            <p class="review-text">Gilly's Electrical did a fantastic job upgrading our consumer unit. The work was completed quickly and professionally, and the price was very fair. Highly recommend to anyone in the Folkestone area.</p>
-                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                            <div class="review-author">Sarah M.</div>
-                            <div class="review-location">Folkestone</div>
+                <button class="review-arrow" onclick="slideReview(-1)" aria-label="Previous review">&#8592;</button>
+                <div class="review-slider">
+                    <div class="review-track">
+                        <div class="review-slide">
+                            <div class="review-card-full">
+                                <div class="review-quote-icon">&ldquo;</div>
+                                <p class="review-text">Replaced 2 fans in our property in Hythe. Would highly recommend.</p>
+                                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <div class="review-author">Deborah Dobson</div>
+                                <div class="review-location">Hythe, Kent &middot; Google Review</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review-slide">
-                        <div class="review-card-full">
-                            <div class="review-quote-icon">"</div>
-                            <p class="review-text">Called them out for an emergency repair on a Saturday and they were there within the hour. Sorted the issue quickly and explained everything clearly. Brilliant service - will definitely use again.</p>
-                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                            <div class="review-author">James T.</div>
-                            <div class="review-location">Hythe</div>
-                        </div>
-                    </div>
-                    <div class="review-slide">
-                        <div class="review-card-full">
-                            <div class="review-quote-icon">"</div>
-                            <p class="review-text">We had extractor fans fitted in the bathroom and kitchen to deal with condensation. The difference has been incredible - no more mould on the windows. Very tidy work and excellent communication throughout.</p>
-                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                            <div class="review-author">Karen L.</div>
-                            <div class="review-location">Dover</div>
+                        <div class="review-slide">
+                            <div class="review-card-full">
+                                <div class="review-quote-icon">&ldquo;</div>
+                                <p class="review-text">I highly recommend Gilly's Electrical. Malcolm recently completed an electrical installation condition report at my flat. Very professional, thorough, and reasonably priced.</p>
+                                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <div class="review-author">Sue Turton</div>
+                                <div class="review-location">Folkestone, Kent &middot; Google Review</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="review-arrow review-arrow-next" onclick="goToSlide((currentSlide + 1) % 3)">&#8594;</button>
+                <button class="review-arrow" onclick="slideReview(1)" aria-label="Next review">&#8594;</button>
             </div>
             <div class="review-dots">
-                <button class="review-dot active" data-index="0" aria-label="Review 1"></button>
-                <button class="review-dot" data-index="1" aria-label="Review 2"></button>
-                <button class="review-dot" data-index="2" aria-label="Review 3"></button>
+                <button class="review-dot active" onclick="goToReview(0)" aria-label="Review 1"></button>
+                <button class="review-dot" onclick="goToReview(1)" aria-label="Review 2"></button>
             </div>
         </div>
     </section>
@@ -1714,6 +2137,46 @@
                     <div class="faq-answer-inner">Yes, we regularly work with landlords and letting agents across Kent. We provide EICR certificates, smoke alarm installations, consumer unit upgrades, and general electrical maintenance for rental properties. We understand the legal requirements and can help you stay compliant.</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER 2 -->
+    <section class="cta-banner">
+        <div class="cta-banner-inner">
+            <h2>Ready to Get Started?</h2>
+            <p>Whether it's a small repair or a full rewire, we're here to help.</p>
+            <div class="cta-buttons">
+                <a href="tel:01303770445" class="btn-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    Call Now
+                </a>
+                <a href="#contact" class="btn-outline-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Get a Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION MAP -->
+    <section class="location-map" id="location">
+        <div class="section-header">
+            <span class="section-label">Find Us</span>
+            <h2>Our Location</h2>
+            <p>Based in Folkestone, covering Hythe, Dover, Ashford, Canterbury, Deal, Hawkinge, Sandgate and Cheriton.</p>
+        </div>
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156.61150544571746!2d1.140875505735024!3d51.093992082954166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deb8b5ae7f508b%3A0x452ace3942022788!2s41%20Charles%20Cres%2C%20Folkestone%20CT19%204NG!5e0!3m2!1sen!2suk!4v1761557420424!5m2!1sen!2suk"
+                title="Gilly's Electrical, 41 Charles Crescent, Folkestone CT19 4NG"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
         </div>
     </section>
 
@@ -1797,15 +2260,15 @@
                     </h4>
                     <div class="hours-row">
                         <span class="day">Monday – Friday</span>
-                        <span class="time">8am – 6pm</span>
+                        <span class="time">9am – 5pm</span>
                     </div>
                     <div class="hours-row">
                         <span class="day">Saturday</span>
-                        <span class="time">9am – 2pm</span>
+                        <span class="time">Closed</span>
                     </div>
                     <div class="hours-row">
                         <span class="day">Sunday</span>
-                        <span class="time">By arrangement</span>
+                        <span class="time">Closed</span>
                     </div>
                 </div>
             </div>
@@ -1828,12 +2291,13 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="areas.html">Areas</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Our Work</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#reviews">Reviews</a></li>
                         <li><a href="#faq">FAQ</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1904,23 +2368,26 @@
         });
 
         // Review Slider
-        var currentSlide = 0;
-        var track = document.getElementById('reviewTrack');
-        var dots = document.querySelectorAll('.review-dot');
+        var currentReview = 0;
+        var totalReviews = document.querySelectorAll('.review-slide').length;
 
-        function goToSlide(index) {
-            currentSlide = index;
-            track.style.transform = 'translateX(-' + (index * 100) + '%)';
-            dots.forEach(function(dot, i) {
-                dot.classList.toggle('active', i === index);
-            });
+        function slideReview(dir) {
+            currentReview = Math.min(Math.max(0, currentReview + dir), totalReviews - 1);
+            updateReviewSlider();
         }
 
-        dots.forEach(function(dot) {
-            dot.addEventListener('click', function() {
-                goToSlide(parseInt(this.getAttribute('data-index')));
+        function goToReview(index) {
+            currentReview = index;
+            updateReviewSlider();
+        }
+
+        function updateReviewSlider() {
+            var track = document.querySelector('.review-track');
+            track.style.transform = 'translateX(-' + (currentReview * 100) + '%)';
+            document.querySelectorAll('.review-dot').forEach(function(dot, i) {
+                dot.classList.toggle('active', i === currentReview);
             });
-        });
+        }
 
         // Mobile menu toggle (basic)
         var menuBtn = document.querySelector('.mobile-menu-btn');

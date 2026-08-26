@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Guides &amp; Tips | Electrician Folkestone — Gilly's Electrical</title>
+    <meta name="description" content="Expert electrical guides from Gilly's Electrical. EICR requirements for landlords, extractor fan installation tips, and advice on hiring an electrician in Folkestone, Kent.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-green: #1d632e;
+            --brand-green: #72a732;
+            --medium-green: #547f1f;
+            --bright-green: #9ce2ae;
+            --light-green-bg: #edf8f0;
+            --light-green-text-bg: #cbeed6;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ==================== NAV ==================== */
+        .nav {
+            background: var(--white);
+            border-bottom: 2px solid var(--light-green-bg);
+            padding: 0 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--dark-green);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .nav-phone:hover {
+            color: var(--medium-green);
+        }
+
+        .nav-cta {
+            background: var(--medium-green);
+            color: var(--white);
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--bright-green);
+            color: var(--dark-green);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--medium-green);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        /* ==================== PAGE HERO ==================== */
+        .page-hero {
+            background: var(--medium-green);
+            padding: 3.5rem 2rem 3rem;
+        }
+
+        .page-hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--bright-green);
+        }
+
+        .breadcrumb-sep {
+            color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
+        }
+
+        .breadcrumb span {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.82);
+            max-width: 640px;
+            line-height: 1.65;
+        }
+
+        /* ==================== ARTICLES ==================== */
+        .article-section {
+            padding: 5rem 2rem;
+        }
+
+        .article-section.bg-white {
+            background: var(--white);
+        }
+
+        .article-section.bg-light {
+            background: var(--light-green-bg);
+        }
+
+        .article-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .article-label {
+            display: inline-block;
+            background: var(--light-green-text-bg);
+            color: var(--medium-green);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .article-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark-green);
+            line-height: 1.2;
+            margin-bottom: 1.75rem;
+        }
+
+        .article-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+            margin-bottom: 1.25rem;
+        }
+
+        .article-section ul,
+        .article-section ol {
+            margin: 0.75rem 0 1.25rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .article-section ul li,
+        .article-section ol li {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+            padding-left: 0.25rem;
+        }
+
+        .article-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .article-section ul li {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .article-section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.65em;
+            width: 8px;
+            height: 8px;
+            background: var(--brand-green);
+            border-radius: 50%;
+        }
+
+        .article-section a {
+            color: var(--medium-green);
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-color: rgba(84,127,31,0.35);
+            transition: color 0.2s, text-decoration-color 0.2s;
+        }
+
+        .article-section a:hover {
+            color: var(--dark-green);
+            text-decoration-color: var(--dark-green);
+        }
+
+        .article-divider {
+            border: none;
+            border-top: 2px solid var(--light-green-text-bg);
+            margin: 0;
+        }
+
+        /* ==================== INLINE CTA ==================== */
+        .inline-cta {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+            text-align: center;
+        }
+
+        .inline-cta-box {
+            display: inline-block;
+            background: var(--light-green-bg);
+            border: 2px solid var(--light-green-text-bg);
+            border-radius: 14px;
+            padding: 1.5rem 2.5rem;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .inline-cta-box p {
+            font-size: 1.05rem;
+            color: var(--gray-700);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .inline-cta-box p strong {
+            color: var(--dark-green);
+        }
+
+        .btn-primary {
+            background: var(--brand-green);
+            color: var(--white);
+            padding: 0.85rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--bright-green);
+            color: var(--dark-green);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            padding: 0.85rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 2px solid rgba(255,255,255,0.5);
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-outline-white:hover {
+            border-color: var(--bright-green);
+            color: var(--bright-green);
+            transform: translateY(-1px);
+        }
+
+        /* ==================== FINAL CTA ==================== */
+        .cta-section {
+            background: var(--dark-green);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.75);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: var(--dark-green);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-left .footer-logo {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-left > p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            max-width: 360px;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        .footer-social-link {
+            color: rgba(255,255,255,0.6);
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-social-link:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-social-link svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .footer-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--bright-green);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-col .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        .footer-col .footer-contact-item a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col .footer-contact-item a:hover {
+            color: var(--bright-green);
+        }
+
+        .footer-col .footer-contact-item svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.35);
+            font-size: 0.8rem;
+        }
+
+        /* ==================== MOBILE FLOATING BUTTONS ==================== */
+        .mobile-float-call,
+        .mobile-float-whatsapp {
+            display: none;
+            position: fixed;
+            bottom: 1.25rem;
+            z-index: 9999;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .mobile-float-call {
+            left: 1rem;
+            background: var(--medium-green);
+        }
+
+        .mobile-float-whatsapp {
+            right: 1rem;
+            background: #25D366;
+            padding: 0.75rem;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            justify-content: center;
+        }
+
+        .mobile-float-call:hover,
+        .mobile-float-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-phone {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-inner {
+                height: 60px;
+            }
+
+            .page-hero {
+                padding: 2.5rem 1.5rem 2rem;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero p {
+                font-size: 1rem;
+            }
+
+            .article-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .article-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .article-section h3 {
+                font-size: 1.1rem;
+            }
+
+            .inline-cta {
+                padding: 2rem 1.5rem;
+            }
+
+            .inline-cta-box {
+                padding: 1.25rem 1.5rem;
+            }
+
+            .cta-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary, .btn-outline-white {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-right {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+
+            .mobile-float-call,
+            .mobile-float-whatsapp {
+                display: flex;
+            }
+
+            .footer {
+                padding-bottom: 5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .article-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .footer-right {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="gillys-electrical-2.html" class="nav-logo">
+                <img src="gilly-logo-trans.png" alt="Gilly's Electrical" style="height:58px;display:block;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="areas.html">Areas</a></li>
+                <li><a href="articles.html" class="active">Blog</a></li>
+                <li><a href="gillys-electrical-2.html#reviews">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:01303770445" class="nav-phone">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    01303 770 445
+                </a>
+                <a href="contact.html" class="nav-cta">Get a Free Quote</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d632e" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="gillys-electrical-2.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Guides</span>
+            </nav>
+            <h1>Electrical Guides &amp; Tips</h1>
+            <p>Expert advice and helpful information from your local Folkestone electrician.</p>
+        </div>
+    </section>
+
+    <!-- ARTICLE 1 -->
+    <article class="article-section bg-white">
+        <div class="article-inner">
+            <span class="article-label">Guide</span>
+            <h2>How to Choose a Reliable Electrician in Folkestone</h2>
+
+            <p>Hiring the right electrician is not just a matter of convenience — it is a decision that directly affects the safety of your home or business. Electrical work carried out by an unqualified person can result in fire hazards, failed inspections, voided insurance, and serious legal liability. In <a href="folkestone.html">Folkestone</a> and across Kent, there are plenty of tradespeople offering electrical work, but knowing how to separate the reliable, qualified professionals from the rest is essential before any work begins.</p>
+
+            <h3>Why Qualifications Matter</h3>
+
+            <p>In England, Wales, and Scotland, certain types of electrical work in domestic properties are classified as "notifiable" under Part P of the Building Regulations. This means the work must either be carried out by a registered competent person, or it must be notified to the local authority building control department and inspected. Failure to comply can result in enforcement action, and when you come to sell your property, you may be asked to provide evidence that electrical work was carried out to the required standard.</p>
+
+            <p>Beyond the regulatory requirements, qualifications give you assurance that your electrician has the knowledge and practical training to do the job safely. A properly trained electrician understands fault current, earthing systems, bonding requirements, and how to test an installation to prove it is safe before handing it back to you.</p>
+
+            <h3>What Qualifications to Look For</h3>
+
+            <p>When hiring an electrician in Folkestone, look for the following:</p>
+
+            <ul>
+                <li><strong>Part P registration</strong> — This confirms the electrician is registered as a competent person and can self-certify notifiable work without requiring a separate building control inspection. Registration bodies include NICEIC, NAPIT, Elecsa, and SELECT.</li>
+                <li><strong>City &amp; Guilds 2382</strong> or equivalent — This is the qualification that covers the current edition of the Wiring Regulations (BS 7671). It confirms the electrician is up to date with current standards.</li>
+                <li><strong>ECS Gold Card</strong> — The Electrotechnical Certification Scheme card at Gold level confirms a fully qualified electrician. It is widely recognised across the industry.</li>
+                <li><strong>Public liability insurance</strong> — Any reputable electrician should carry public liability insurance as a minimum. This protects you if something goes wrong during or after the work.</li>
+            </ul>
+
+            <h3>Questions to Ask Before Hiring</h3>
+
+            <p>Before you commit to any electrician, take the time to ask a few straightforward questions. A professional will have no issue answering all of them clearly:</p>
+
+            <ul>
+                <li>Are you registered with a competent persons scheme? Which one?</li>
+                <li>Can you provide a written quote before starting work?</li>
+                <li>Do you carry public liability insurance, and can I see the certificate?</li>
+                <li>Will you provide certification on completion of the work?</li>
+                <li>Have you carried out this type of work before, and can you provide references?</li>
+            </ul>
+
+            <p>Written quotes are particularly important. A quote sets out exactly what work will be carried out, what materials will be used, and the total cost. It protects both you and the electrician, and any professional worth hiring will offer one as standard. If an electrician is reluctant to put anything in writing, treat that as an immediate warning sign.</p>
+
+            <h3>The Advantage of Choosing a Local Folkestone Electrician</h3>
+
+            <p>There is a real and practical advantage to working with an electrician who is genuinely local to <a href="folkestone.html">Folkestone</a> and East Kent. A local electrician can respond quickly to emergency call-outs without the delay and added cost of travel from further afield. They are also familiar with the older housing stock common in the area — much of Folkestone was built in the Victorian and Edwardian eras, and working with older wiring, knob-and-tube remnants, and ageing consumer units requires experience specific to the age and type of properties found locally.</p>
+
+            <p>There is also a matter of accountability. A local tradesperson has their reputation to protect in the local community. They are far more likely to stand behind their work, return to resolve any issues, and maintain a high standard to ensure repeat business and word-of-mouth referrals. A contractor who travels from outside the area has less at stake locally and may be harder to follow up with if something is not right.</p>
+
+            <h3>Red Flags to Watch For</h3>
+
+            <p>Not every person offering electrical work is qualified or trustworthy. Here are some warning signs that should make you look elsewhere:</p>
+
+            <ul>
+                <li><strong>No written quotes</strong> — If they will only give you a verbal price, walk away.</li>
+                <li><strong>Cash-only payment</strong> — This is a strong indicator that the work will not be registered or certified, which creates problems for you down the line.</li>
+                <li><strong>No certification on completion</strong> — All notifiable electrical work must be certified. If your electrician cannot provide this, the work has not been done to the required standard.</li>
+                <li><strong>Unusually low prices</strong> — Extremely cheap quotes often indicate corners being cut, unqualified labour, or substandard materials.</li>
+                <li><strong>Pressure to start immediately</strong> — A legitimate professional will give you time to consider your quote. High-pressure tactics are a sign to be cautious.</li>
+                <li><strong>No registered address or contact details</strong> — If you cannot easily find information about them, that is a red flag.</li>
+            </ul>
+
+            <h3>How Gilly's Electrical Meets Every Standard</h3>
+
+            <p>At Gilly's Electrical, we meet every one of these criteria. We are fully qualified, registered, and insured, and we provide written quotes as standard for all work. Every job — from a simple extractor fan fitting to a full consumer unit replacement — is completed to BS 7671 Wiring Regulations and certificated on completion. You will always have the paperwork you need for insurance purposes, property sales, or landlord compliance.</p>
+
+            <p>As a genuinely local <a href="folkestone.html">Folkestone</a> electrician, we know the area, we know the properties, and we are invested in our local reputation. We do not subcontract, and every job is handled personally. If you need any of our <a href="services.html">electrical services</a> — from an EICR inspection to a full rewire — or you simply want an honest conversation about what your property needs, we are easy to reach. <a href="contact.html">Get in touch</a> today for a free, no-obligation quote.</p>
+        </div>
+    </article>
+
+    <hr class="article-divider">
+
+    <!-- INLINE CTA 1 -->
+    <div class="inline-cta">
+        <div class="inline-cta-box">
+            <p>Need a quote? Call <strong>01303 770 445</strong> or request a free quote online.</p>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+    </div>
+
+    <hr class="article-divider">
+
+    <!-- ARTICLE 2 -->
+    <article class="article-section bg-light">
+        <div class="article-inner">
+            <span class="article-label">Landlord Guide</span>
+            <h2>EICR Certificates in Folkestone: What Every Landlord Needs to Know</h2>
+
+            <p>If you are a landlord in <a href="folkestone.html">Folkestone</a> or anywhere in England, understanding your legal obligations around electrical safety is not optional — it is a legal requirement. The <a href="services.html">EICR certificate</a> (Electrical Installation Condition Report) is the primary document that demonstrates your rental property's electrics meet the required safety standard, and failing to have one in place can result in significant financial penalties.</p>
+
+            <h3>What Is an EICR?</h3>
+
+            <p>An Electrical Installation Condition Report is a formal document produced by a qualified electrician following a thorough inspection and test of a property's entire electrical installation. It covers the fixed wiring, consumer unit (fuse board), sockets, switches, light fittings, and earthing and bonding arrangements.</p>
+
+            <p>The report assesses whether the installation is safe to use, whether it meets the current standards set out in BS 7671 (the Wiring Regulations), and whether there are any defects or deterioration that require attention. It is not a test of portable appliances — that is a separate process called a PAT test. An EICR focuses solely on the fixed electrical installation itself.</p>
+
+            <h3>The Legal Requirement for Landlords</h3>
+
+            <p>The Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020 came into force for new tenancies from 1 July 2020 and for all existing tenancies from 1 April 2021. Under these regulations, private landlords in England are legally required to:</p>
+
+            <ul>
+                <li>Ensure the electrical installation in their rented property is inspected and tested by a qualified electrician at intervals of no more than five years.</li>
+                <li>Obtain an EICR from the inspector.</li>
+                <li>Supply a copy of the EICR to their existing tenants within 28 days of the inspection.</li>
+                <li>Supply a copy to any new tenant before they occupy the premises.</li>
+                <li>Supply a copy to any prospective tenant within 28 days of a request.</li>
+                <li>Supply a copy to the local housing authority within 7 days of a request.</li>
+                <li>Retain a copy of the report to give to the inspector at the next inspection.</li>
+            </ul>
+
+            <p>If the report reveals that remedial work is required, the landlord must ensure that work is completed within 28 days of the inspection (or sooner if specified in the report) and must obtain written confirmation from a qualified electrician that the work has been carried out satisfactorily.</p>
+
+            <h3>How Often Is an EICR Required?</h3>
+
+            <p>An EICR is required at least every five years for a rental property. However, it should also be carried out at any change of tenancy if the existing report is older than five years, or if there are concerns about the condition of the electrical installation. For certain types of accommodation such as Houses in Multiple Occupation (HMOs), the requirement may be more frequent depending on the local authority's conditions.</p>
+
+            <p>It is worth noting that even if your report is within the five-year window, a qualified electrician may recommend a shorter interval if the installation shows significant deterioration, has been subject to unusual use, or if the property type warrants closer monitoring.</p>
+
+            <h3>What Happens During an EICR Inspection?</h3>
+
+            <p>The inspection is carried out by a qualified electrician with the appropriate competencies for testing and inspection. The process involves a visual examination of the installation as well as a series of electrical tests. During the inspection, the power supply to the property will need to be switched off periodically, so it is worth informing any occupants in advance.</p>
+
+            <p>The electrician will check the consumer unit for signs of overheating, damage, or outdated components. They will test every circuit in the property for insulation resistance, polarity, earth fault loop impedance, and continuity of protective conductors. They will also inspect sockets, switches, and any accessible wiring for signs of damage or deterioration.</p>
+
+            <h3>What Do the Results Mean?</h3>
+
+            <p>The EICR uses a coding system to classify any issues found:</p>
+
+            <ul>
+                <li><strong>C1 — Danger present:</strong> Risk of injury. Immediate remedial action required. The installation may need to be isolated until the issue is resolved.</li>
+                <li><strong>C2 — Potentially dangerous:</strong> Urgent remedial action required. The fault is not immediately dangerous but presents a significant risk and must be addressed promptly.</li>
+                <li><strong>C3 — Improvement recommended:</strong> This is not a failure. The installation is safe but does not comply with current best practice. Improvement is advisable but not mandatory.</li>
+                <li><strong>FI — Further investigation required:</strong> An aspect of the installation could not be fully assessed and needs further investigation before a determination can be made.</li>
+            </ul>
+
+            <p>An EICR with only C3 codes or no codes at all is given an overall result of <strong>Satisfactory</strong>. An EICR containing one or more C1 or C2 codes is given an overall result of <strong>Unsatisfactory</strong>.</p>
+
+            <h3>What Happens If Your Property Fails?</h3>
+
+            <p>An Unsatisfactory EICR does not mean your property is condemned — it means remedial work is required. The landlord is legally obliged to have that work carried out within 28 days (or faster if specified) and to obtain written confirmation from the electrician who carried out the work that the issues have been resolved. In some cases, the electrician who carried out the original inspection may be able to carry out the remedial work at the same visit or shortly after.</p>
+
+            <p>If a landlord fails to comply with the regulations, the local housing authority can arrange for remedial work to be carried out and recover the costs from the landlord. Civil penalties of up to £30,000 can also be imposed for non-compliance.</p>
+
+            <h3>Typical Costs and What Affects the Price</h3>
+
+            <p>The cost of an EICR varies depending on the size of the property, the number of circuits, the age and condition of the installation, and the location. A small one-bedroom flat will cost less than a large four-bedroom house with a complex installation. As a general guide, prices in Kent typically range from around £120 for a small property up to £300 or more for a larger property with many circuits.</p>
+
+            <p>It is important to choose a qualified electrician rather than simply opting for the cheapest price. An EICR carried out by an unqualified person will not be legally valid, and you will not be compliant with the regulations even if you have a document to show for it.</p>
+
+            <h3>EICR Services from Gilly's Electrical</h3>
+
+            <p>Gilly's Electrical provides <a href="services.html">EICR certificates</a> for landlords and homeowners across <a href="folkestone.html">Folkestone</a> and the wider East Kent area, including Hythe, Dover, Ashford, and Canterbury. We carry out thorough inspections using calibrated test equipment, and we produce clear, accurate reports that give you a full picture of your installation's condition. If remedial work is needed, we can carry it out and provide the written confirmation you need to demonstrate compliance. To arrange an EICR inspection, <a href="contact.html">contact us</a> today and we will be happy to discuss your requirements and provide a competitive quote.</p>
+        </div>
+    </article>
+
+    <hr class="article-divider">
+
+    <!-- INLINE CTA 2 -->
+    <div class="inline-cta">
+        <div class="inline-cta-box">
+            <p>Need a quote? Call <strong>01303 770 445</strong> or request a free quote online.</p>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+    </div>
+
+    <hr class="article-divider">
+
+    <!-- ARTICLE 3 -->
+    <article class="article-section bg-white">
+        <div class="article-inner">
+            <span class="article-label">Installation Guide</span>
+            <h2>Extractor Fan Installation: Types, Benefits &amp; What to Expect</h2>
+
+            <p>Extractor fans are one of the most effective and cost-efficient solutions for managing moisture in your home. Whether you are dealing with persistent condensation on windows, black mould appearing in corners, or simply trying to meet building regulations on a new build or extension, a correctly specified and installed extractor fan makes a significant difference. This guide covers everything you need to know about the types of fans available, why they matter, what the regulations say, and what to expect when a qualified electrician carries out the installation.</p>
+
+            <h3>Why You Need an Extractor Fan</h3>
+
+            <p>Every time someone showers, cooks, or dries clothes indoors, moisture is released into the air. Without adequate ventilation, that moisture has nowhere to go. It condenses on cold surfaces — walls, windows, ceilings — and over time creates the conditions for mould growth. Black mould is not just unsightly; it is a health hazard, particularly for people with respiratory conditions, allergies, or compromised immune systems.</p>
+
+            <p>Beyond the health implications, persistent damp can cause structural damage. It affects plasterwork, timber joinery, and over time can compromise the integrity of the building fabric itself. An extractor fan works by actively removing moist air before it has the chance to condense, replacing it with drier air drawn in from elsewhere in the building.</p>
+
+            <p>Part F of the Building Regulations sets out minimum ventilation requirements for habitable rooms, kitchens, and bathrooms in England. Compliance is required for new builds, extensions, and conversions, and an extractor fan is often the most practical way to meet these requirements in wet rooms.</p>
+
+            <h3>Types of Extractor Fans</h3>
+
+            <p>Not all extractor fans are the same, and choosing the right type depends on your property, the room, and the length of the duct run. Here is a breakdown of the main options:</p>
+
+            <h3>Axial Fans</h3>
+
+            <p>The most common type found in bathrooms and kitchens, axial fans move air along the axis of the fan's rotation. They are compact, relatively quiet, and straightforward to install. They work well in rooms where the duct run to the outside is short and direct — typically no more than one to two metres. For most standard bathrooms with an external wall, an axial fan is the obvious choice.</p>
+
+            <h3>Centrifugal Fans</h3>
+
+            <p>Where the duct run is longer — for example, a bathroom that sits in the middle of a house with no direct external wall — a centrifugal fan is a better option. These fans generate higher pressure, which allows them to push air through longer duct runs and around bends without a significant drop in performance. They are slightly larger and more expensive than axial fans, but essential in properties where a direct short duct run is not possible.</p>
+
+            <h3>Inline Fans</h3>
+
+            <p>Inline fans are mounted within the duct run itself rather than directly on the wall or ceiling of the room. This makes them particularly useful in larger properties, extensions, or situations where multiple rooms need to be ventilated through a single duct. Because the fan motor is located away from the room, they can be very quiet at the point of use. They are commonly used in commercial premises and larger residential projects.</p>
+
+            <h3>Humidity-Controlled Fans</h3>
+
+            <p>Humidity-controlled (or humidistat-controlled) fans contain a sensor that automatically activates the fan when moisture in the air reaches a certain level. They operate independently of the light switch and continue to run until the humidity drops to a safe level. This makes them ideal for households where people regularly take long showers or where there is a persistent condensation problem. They remove the need to remember to switch the fan on, and they run only when genuinely needed — making them efficient as well as effective.</p>
+
+            <h3>Timer Fans</h3>
+
+            <p>Timer fans include a run-on timer that keeps the fan running for a preset period after the light switch is turned off — typically between five and twenty minutes. This ensures that moisture generated during a shower or bath is fully extracted even after the occupant has left the room and switched the light off. Timer fans are a popular choice in new builds and rental properties where consistent ventilation behaviour is important regardless of the occupant.</p>
+
+            <h3>Building Regulations — Part F</h3>
+
+            <p>Part F of the Building Regulations (Ventilation) sets out minimum air flow rates for different types of rooms. For a bathroom, the minimum extract rate is 15 litres per second, or six air changes per hour. For a kitchen, the requirement rises to 30 litres per second adjacent to a hob, or 60 litres per second for a cooker hood. When selecting a fan, it is important to match the fan's rated flow to these minimums and to account for any reduction in performance caused by duct length, bends, and grilles.</p>
+
+            <p>In new builds and certain types of renovation work, compliance with Part F must be demonstrated to building control. Your electrician should be able to advise on this and ensure the fan specification meets the requirements for your specific project.</p>
+
+            <h3>The Installation Process — What to Expect</h3>
+
+            <p>Extractor fan installation is typically a half-day job for a straightforward axial fan replacement or new installation in a standard bathroom with a short duct run. More complex installations — inline fans, centrifugal fans serving internal rooms, or installations requiring a new spur from the consumer unit — will take longer.</p>
+
+            <p>The electrician will first identify the best position for the fan, typically centred over the bath or shower area and as close to the external wall as possible to minimise the duct run. They will then prepare the duct route, which may involve drilling through a wall or ceiling and fitting a duct liner and external grille. The fan is connected to the mains — usually via the bathroom lighting circuit — with appropriate waterproofing measures in place to meet the zoning requirements of BS 7671. Where the installation is in a bathroom zone, IP-rated equipment is used to protect against moisture ingress.</p>
+
+            <p>On completion, the electrician will test the fan, check the air flow direction, and confirm that the duct discharges correctly to the outside. A Minor Works Certificate or similar certification will be provided as appropriate.</p>
+
+            <h3>Maintenance Tips</h3>
+
+            <p>Extractor fans require very little maintenance, but a small amount of regular attention will keep them running efficiently:</p>
+
+            <ul>
+                <li>Clean the fan cover and grille every few months to prevent dust build-up restricting airflow.</li>
+                <li>Check the external grille occasionally to ensure it has not become blocked by debris or nesting insects.</li>
+                <li>Listen for any change in noise level — increased noise can indicate a build-up of dirt on the fan blades or a bearing beginning to wear.</li>
+                <li>If performance drops noticeably, consider having the fan inspected or replaced. A fan that is no longer extracting effectively is no longer doing its job.</li>
+            </ul>
+
+            <h3>Extractor Fan Installation from Gilly's Electrical</h3>
+
+            <p>Gilly's Electrical specialises in <a href="services.html">ventilation services</a> across Folkestone and across the <a href="areas.html">areas we cover</a> in East Kent. Whether you need a straightforward bathroom fan replacement, a humidity-controlled fan to tackle a persistent damp problem, or a more complex inline system for a larger property, we can advise on the right solution and carry out the installation to the required standard. All work is certified and carried out in compliance with Part F of the Building Regulations and BS 7671. <a href="contact.html">Get a free quote</a> today and let us help you find the right ventilation solution for your home.</p>
+        </div>
+    </article>
+
+    <!-- FINAL CTA BANNER -->
+    <section class="cta-section">
+        <h2>Need an Electrician in Folkestone?</h2>
+        <p>We're your local, trusted electrician. Get a free, no-obligation quote today.</p>
+        <div class="cta-buttons">
+            <a href="tel:01303770445" class="btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                Call 01303 770 445
+            </a>
+            <a href="contact.html" class="btn-outline-white">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                Request a Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="gilly-logo-light.png" alt="Gilly's Electrical" style="height:56px;margin-bottom:12px;display:block;">
+                </div>
+                <p>Professional electrician and ventilation specialist serving Folkestone, Hythe, Dover, and the wider Kent area. Fully insured, qualified, and committed to high-quality workmanship on every job.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/gillys.electrical" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.027 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.93-1.956 1.886v2.286h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="gillys-electrical-2.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="areas.html">Areas</a></li>
+                        <li><a href="articles.html">Blog</a></li>
+                        <li><a href="gillys-electrical-2.html#reviews">Reviews</a></li>
+                        <li><a href="gillys-electrical-2.html#faq">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <a href="tel:01303770445">01303 770 445</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:info@gillyselectrical.co.uk">info@gillyselectrical.co.uk</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#9ce2ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Folkestone, Kent CT19 4NG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Gilly's Electrical. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- MOBILE FLOATING BUTTONS -->
+    <a href="tel:01303770445" class="mobile-float-call" aria-label="Call Gilly's Electrical">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        Call Now
+    </a>
+    <a href="https://wa.me/441303770445" target="_blank" rel="noopener noreferrer" class="mobile-float-whatsapp" aria-label="WhatsApp Gilly's Electrical">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12.048 2.003C6.472 2.003 1.935 6.54 1.935 12.116c0 1.83.476 3.546 1.306 5.04L2 22l4.999-1.31a10.053 10.053 0 004.049.848h.003c5.576 0 10.112-4.537 10.112-10.113 0-2.703-1.052-5.244-2.961-7.153A10.065 10.065 0 0012.048 2zm0 18.44h-.002a8.35 8.35 0 01-4.255-1.164l-.305-.181-3.165.83.845-3.087-.199-.317A8.34 8.34 0 013.62 12.116c0-4.644 3.78-8.424 8.428-8.424 2.252 0 4.367.878 5.958 2.47a8.372 8.372 0 012.466 5.957c0 4.644-3.781 8.424-8.424 8.424z"/>
+        </svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Mobile menu toggle
+        var menuBtn = document.querySelector('.mobile-menu-btn');
+        var navLinks = document.querySelector('.nav-links');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function() {
+                if (navLinks.style.display === 'flex') {
+                    navLinks.style.display = 'none';
+                } else {
+                    navLinks.style.display = 'flex';
+                    navLinks.style.flexDirection = 'column';
+                    navLinks.style.position = 'absolute';
+                    navLinks.style.top = '60px';
+                    navLinks.style.left = '0';
+                    navLinks.style.right = '0';
+                    navLinks.style.background = '#ffffff';
+                    navLinks.style.padding = '1rem 2rem';
+                    navLinks.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                    navLinks.style.gap = '0.75rem';
+                    navLinks.style.zIndex = '999';
+                }
+            });
+
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    navLinks.style.display = 'none';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

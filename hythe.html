@@ -924,6 +924,77 @@
             .benefits-grid { grid-template-columns: 1fr; }
             .footer-right { grid-template-columns: 1fr; }
         }
+
+        .cta-banner {
+            background: var(--dark-green);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .cta-banner-inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .cta-banner h2 {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+        }
+        .cta-banner p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .cta-banner .btn-white {
+            background: #ffffff;
+            color: #1d632e;
+            padding: 1rem 2.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            border: 2px solid #ffffff;
+        }
+        .cta-banner .btn-white:hover {
+            background: #9ce2ae;
+            border-color: #9ce2ae;
+        }
+        .cta-banner .btn-outline-white {
+            background: transparent;
+            color: #ffffff;
+            padding: 1rem 2.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        .cta-banner .btn-outline-white:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #ffffff;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .cta-banner { padding: 3rem 1.5rem; }
+            .cta-banner h2 { font-size: 1.5rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .cta-banner .btn-white,
+            .cta-banner .btn-outline-white { width: 100%; justify-content: center; }
+        }
     </style>
 </head>
 <body>
@@ -935,6 +1006,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="areas.html">Areas</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -1162,48 +1234,15 @@
         <div class="section-header">
             <span class="section-label">Customer Reviews</span>
             <h2>What Our Customers Say</h2>
-            <p>Real feedback from homeowners and landlords across Kent.</p>
+            <p>Verified feedback from our customers.</p>
         </div>
         <div class="reviews-inner">
-            <div class="review-slider-wrap">
-                <button class="review-arrow" onclick="goToSlide((currentSlide - 1 + 3) % 3)">&#8592;</button>
-                <div class="review-slider">
-                    <div class="review-track" id="reviewTrack">
-                        <div class="review-slide">
-                            <div class="review-card-full">
-                                <div class="review-quote-icon">"</div>
-                                <p class="review-text">Gilly's Electrical did a fantastic job upgrading our consumer unit. The work was completed quickly and professionally, and the price was very fair. Highly recommend to anyone in the Folkestone area.</p>
-                                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                <div class="review-author">Sarah M.</div>
-                                <div class="review-location">Folkestone</div>
-                            </div>
-                        </div>
-                        <div class="review-slide">
-                            <div class="review-card-full">
-                                <div class="review-quote-icon">"</div>
-                                <p class="review-text">Called them out for an emergency repair on a Saturday and they were there within the hour. Sorted the issue quickly and explained everything clearly. Brilliant service — will definitely use again.</p>
-                                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                <div class="review-author">James T.</div>
-                                <div class="review-location">Hythe</div>
-                            </div>
-                        </div>
-                        <div class="review-slide">
-                            <div class="review-card-full">
-                                <div class="review-quote-icon">"</div>
-                                <p class="review-text">We had extractor fans fitted in the bathroom and kitchen to deal with condensation. The difference has been incredible — no more mould on the windows. Very tidy work and excellent communication throughout.</p>
-                                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                <div class="review-author">Karen L.</div>
-                                <div class="review-location">Dover</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="review-arrow" onclick="goToSlide((currentSlide + 1) % 3)">&#8594;</button>
-            </div>
-            <div class="review-dots">
-                <button class="review-dot active" data-index="0" aria-label="Review 1"></button>
-                <button class="review-dot" data-index="1" aria-label="Review 2"></button>
-                <button class="review-dot" data-index="2" aria-label="Review 3"></button>
+            <div class="review-card-full" style="max-width:700px;margin:0 auto;">
+                <div class="review-quote-icon">"</div>
+                <p class="review-text">Professional, reliable, and excellent quality workmanship. Would highly recommend to anyone in the area.</p>
+                <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <div class="review-author">Google Review</div>
+                <div class="review-location">Hythe, Kent</div>
             </div>
         </div>
     </section>
@@ -1302,6 +1341,24 @@
         </div>
     </section>
 
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-banner-inner">
+            <h2>Get a Free Quote Today</h2>
+            <p>Whether it's a small repair or a full rewire, we're here to help. Call us or request a quote online.</p>
+            <div class="cta-buttons">
+                <a href="tel:01303770445" class="btn-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call 01303 770 445
+                </a>
+                <a href="contact.html" class="btn-outline-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Request a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-left">
@@ -1320,8 +1377,10 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="areas.html">Areas</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="#reviews">Reviews</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="articles.html">Guides</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1368,24 +1427,6 @@
     </a>
 
     <script>
-        var currentSlide = 0;
-        var track = document.getElementById('reviewTrack');
-        var dots = document.querySelectorAll('.review-dot');
-
-        function goToSlide(index) {
-            currentSlide = index;
-            track.style.transform = 'translateX(-' + (index * 100) + '%)';
-            dots.forEach(function(dot, i) {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        dots.forEach(function(dot) {
-            dot.addEventListener('click', function() {
-                goToSlide(parseInt(this.getAttribute('data-index')));
-            });
-        });
-
         var menuBtn = document.querySelector('.mobile-menu-btn');
         var navLinks = document.querySelector('.nav-links');
         if (menuBtn) {

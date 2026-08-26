@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us — Gilly's Electrical</title>
-    <meta name="description" content="About Gilly's Electrical — your local, trusted electrician in Folkestone, Kent. Fully insured, reliable, and committed to quality workmanship on every job across East Kent.">
+    <title>Blog — Gilly's Electrical</title>
+    <meta name="description" content="Electrical tips, project updates, and expert advice from Gilly's Electrical in Folkestone, Kent.">
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,6 +126,10 @@
             color: var(--medium-green);
         }
 
+        .nav-links a.active {
+            font-weight: 700;
+        }
+
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -150,26 +154,29 @@
             align-items: center;
             gap: 0.5rem;
             margin-bottom: 1.25rem;
-            font-size: 0.85rem;
         }
 
         .breadcrumb a {
             color: rgba(255,255,255,0.7);
             text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
             transition: color 0.2s;
         }
 
         .breadcrumb a:hover {
-            color: var(--white);
+            color: var(--bright-green);
         }
 
         .breadcrumb-sep {
             color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
         }
 
-        .breadcrumb-current {
-            color: var(--bright-green);
-            font-weight: 600;
+        .breadcrumb span {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.85rem;
+            font-weight: 500;
         }
 
         .page-hero h1 {
@@ -177,275 +184,123 @@
             font-weight: 800;
             color: var(--white);
             line-height: 1.15;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .page-hero p {
             font-size: 1.1rem;
-            color: rgba(255,255,255,0.8);
-            max-width: 560px;
+            color: rgba(255,255,255,0.82);
+            max-width: 640px;
+            line-height: 1.65;
         }
 
-        /* ==================== OUR STORY ==================== */
-        .story {
-            background: var(--white);
-            padding: 4rem 2rem;
-        }
-
-        .story-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
-        }
-
-        .story-label {
-            display: inline-block;
-            background: var(--light-green-text-bg);
-            color: var(--medium-green);
-            padding: 0.3rem 1rem;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.75rem;
-        }
-
-        .story-text h2 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: var(--dark-green);
-            line-height: 1.2;
-            margin-bottom: 1.25rem;
-        }
-
-        .story-text p {
-            color: var(--gray-600);
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            line-height: 1.7;
-        }
-
-        .story-text p:last-child {
-            margin-bottom: 0;
-        }
-
-        .story-highlights {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-            padding-top: 2rem;
-        }
-
-        .story-highlight {
-            text-align: center;
-        }
-
-        .story-highlight-number {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--medium-green);
-            line-height: 1;
-            margin-bottom: 0.25rem;
-        }
-
-        .story-highlight-label {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-            font-weight: 500;
-        }
-
-        .story-images {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .story-image {
-            border-radius: 16px;
-            overflow: hidden;
-            border: 3px solid var(--medium-green);
-        }
-
-        .story-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .story-image-main {
-            aspect-ratio: 4/3;
-        }
-
-        .story-image-secondary {
-            aspect-ratio: 16/7;
-        }
-
-        /* ==================== WHY CHOOSE US ==================== */
-        .why {
-            background: var(--gray-50);
+        /* ==================== BLOG GRID ==================== */
+        .blog-section {
             padding: 5rem 2rem;
+            background: var(--gray-50);
         }
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-label {
-            display: inline-block;
-            background: var(--light-green-text-bg);
-            color: var(--medium-green);
-            padding: 0.3rem 1rem;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.75rem;
-        }
-
-        .section-header h2 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: var(--dark-green);
-            margin-bottom: 0.75rem;
-        }
-
-        .section-header p {
-            color: var(--gray-500);
-            max-width: 560px;
-            margin: 0 auto;
-            font-size: 1.05rem;
-        }
-
-        .benefits-grid {
+        .blog-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
         }
 
-        .benefit-card {
+        .service-card {
             background: var(--white);
             border-radius: 14px;
-            padding: 1.75rem 1.5rem;
+            overflow: hidden;
             border: 2px solid transparent;
             transition: all 0.3s;
             box-shadow: 0 1px 4px rgba(0,0,0,0.04);
         }
 
-        .benefit-card:hover {
+        .service-card:hover {
             border-color: var(--medium-green);
             transform: translateY(-4px);
             box-shadow: 0 8px 24px rgba(114,167,50,0.1);
         }
 
-        .benefit-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
+        .blog-card-img-placeholder {
+            width: 100%;
+            height: 220px;
             background: var(--light-green-bg);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1rem;
-            flex-shrink: 0;
+            color: var(--medium-green);
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--gray-200);
         }
 
-        .benefit-icon svg {
-            width: 24px;
-            height: 24px;
+        .service-card-body {
+            padding: 1.25rem 1.5rem 1.5rem;
         }
 
-        .benefit-card h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--dark-green);
+        .blog-card-date {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--medium-green);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
             margin-bottom: 0.5rem;
         }
 
-        .benefit-card p {
-            font-size: 0.9rem;
-            color: var(--gray-500);
-            line-height: 1.6;
-        }
-
-        .benefits-grid .benefit-card:last-child {
-            grid-column: 2;
-        }
-
-        /* ==================== AREAS ==================== */
-        .areas {
-            background: var(--white);
-            padding: 4rem 2rem;
-        }
-
-        .areas-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .areas h2 {
-            color: var(--dark-green);
-            font-size: 1.6rem;
+        .service-card h3 {
+            font-size: 1.15rem;
             font-weight: 700;
-            margin-bottom: 1.25rem;
-        }
-
-        .areas-tags {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.6rem;
-        }
-
-        .area-tag {
-            background: var(--light-green-bg);
             color: var(--dark-green);
-            padding: 0.45rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border: 1.5px solid transparent;
-            transition: all 0.2s;
+            margin-bottom: 0.6rem;
+            line-height: 1.35;
+        }
+
+        .service-card p {
+            color: var(--gray-500);
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 1.1rem;
+        }
+
+        .service-card-link {
+            color: var(--medium-green);
             text-decoration: none;
-            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: color 0.2s;
         }
 
-        .area-tag:hover {
-            background: var(--medium-green);
-            color: var(--white);
-            border-color: var(--dark-green);
+        .service-card-link:hover {
+            color: var(--dark-green);
+            text-decoration: underline;
         }
 
-        /* ==================== CTA ==================== */
-        .cta-section {
-            background: var(--white);
-            padding: 5rem 2rem;
+        /* ==================== CTA BANNER ==================== */
+        .cta-banner {
+            background: #1d632e;
+            padding: 4rem 2rem;
             text-align: center;
         }
 
-        .cta-inner {
-            max-width: 640px;
+        .cta-banner-inner {
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        .cta-section h2 {
-            font-size: 2.2rem;
+        .cta-banner h2 {
+            color: #fff;
+            font-size: 2rem;
             font-weight: 800;
-            color: var(--dark-green);
             margin-bottom: 0.75rem;
         }
 
-        .cta-section p {
-            color: var(--gray-500);
+        .cta-banner p {
+            color: rgba(255,255,255,0.8);
             font-size: 1.05rem;
             margin-bottom: 2rem;
         }
@@ -457,45 +312,45 @@
             flex-wrap: wrap;
         }
 
-        .btn-primary {
-            background: var(--medium-green);
-            color: var(--white);
-            padding: 0.85rem 2rem;
+        .btn-white {
+            background: #fff;
+            color: #1d632e;
+            padding: 1rem 2.2rem;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.2s;
+            font-size: 1.05rem;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            border: none;
-            cursor: pointer;
+            border: 2px solid #fff;
+            transition: all 0.2s;
         }
 
-        .btn-primary:hover {
+        .btn-white:hover {
             background: var(--bright-green);
-            color: var(--dark-green);
+            border-color: var(--bright-green);
             transform: translateY(-1px);
         }
 
-        .btn-secondary {
-            background: var(--white);
-            color: var(--dark-green);
-            padding: 0.85rem 2rem;
+        .btn-outline-white {
+            background: transparent;
+            color: #fff;
+            padding: 1rem 2.2rem;
             border-radius: 10px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
-            border: 2px solid var(--medium-green);
-            transition: all 0.2s;
+            font-size: 1.05rem;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            border: 2px solid rgba(255,255,255,0.5);
+            transition: all 0.2s;
         }
 
-        .btn-secondary:hover {
-            background: var(--light-green-bg);
+        .btn-outline-white:hover {
+            border-color: var(--bright-green);
+            color: var(--bright-green);
             transform: translateY(-1px);
         }
 
@@ -517,18 +372,18 @@
             margin-bottom: 0.75rem;
         }
 
-        .footer-left p {
+        .footer-left > p {
             color: rgba(255,255,255,0.6);
             font-size: 0.9rem;
             max-width: 360px;
             line-height: 1.6;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .footer-social {
             display: flex;
             gap: 0.75rem;
-            margin-top: 1rem;
+            margin-top: 0.25rem;
         }
 
         .footer-social-link {
@@ -687,60 +542,21 @@
                 font-size: 1rem;
             }
 
-            .story {
+            .blog-section {
                 padding: 3rem 1.5rem;
             }
 
-            .story-inner {
+            .blog-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .story-text h2 {
-                font-size: 1.7rem;
-            }
-
-            .story-images {
-                order: -1;
-            }
-
-            .story-highlights {
-                gap: 1rem;
-                justify-content: center;
-            }
-
-            .why {
-                padding: 3rem 1.5rem;
-            }
-
-            .section-header h2 {
-                font-size: 1.7rem;
-            }
-
-            .benefits-grid {
-                grid-template-columns: 1fr 1fr;
                 gap: 1rem;
             }
 
-            .benefits-grid .benefit-card:last-child {
-                grid-column: auto;
-            }
-
-            .areas {
-                padding: 2.5rem 1.5rem;
-            }
-
-            .areas h2 {
-                font-size: 1.3rem;
-                color: var(--dark-green);
-            }
-
-            .cta-section {
+            .cta-banner {
                 padding: 3rem 1.5rem;
             }
 
-            .cta-section h2 {
-                font-size: 1.7rem;
+            .cta-banner h2 {
+                font-size: 1.6rem;
             }
 
             .cta-buttons {
@@ -748,11 +564,11 @@
                 align-items: center;
             }
 
-            .btn-primary,
-            .btn-secondary {
-                justify-content: center;
+            .btn-white,
+            .btn-outline-white {
                 width: 100%;
                 max-width: 320px;
+                justify-content: center;
             }
 
             .footer-inner {
@@ -780,98 +596,13 @@
                 font-size: 1.7rem;
             }
 
-            .section-header h2 {
-                font-size: 1.4rem;
-            }
-
-            .benefits-grid {
+            .blog-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .story-highlights {
-                flex-wrap: wrap;
-                gap: 1.25rem;
-            }
-
-            .cta-section h2 {
-                font-size: 1.4rem;
             }
 
             .footer-right {
                 grid-template-columns: 1fr;
             }
-        }
-
-        /* CTA Banner */
-        .cta-banner {
-            background: var(--dark-green);
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .cta-banner-inner {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .cta-banner h2 {
-            color: #ffffff;
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 0.75rem;
-        }
-        .cta-banner p {
-            color: rgba(255,255,255,0.8);
-            font-size: 1.05rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-        .cta-banner .btn-white {
-            background: #ffffff;
-            color: #1d632e;
-            padding: 1rem 2.2rem;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.05rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.2s;
-            border: 2px solid #ffffff;
-        }
-        .cta-banner .btn-white:hover {
-            background: #9ce2ae;
-            border-color: #9ce2ae;
-        }
-        .cta-banner .btn-outline-white {
-            background: transparent;
-            color: #ffffff;
-            padding: 1rem 2.2rem;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.05rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.2s;
-            border: 2px solid rgba(255,255,255,0.5);
-        }
-        .cta-banner .btn-outline-white:hover {
-            background: rgba(255,255,255,0.1);
-            border-color: #ffffff;
-        }
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        @media (max-width: 768px) {
-            .cta-banner { padding: 3rem 1.5rem; }
-            .cta-banner h2 { font-size: 1.5rem; }
-            .cta-buttons { flex-direction: column; align-items: center; }
-            .cta-banner .btn-white,
-            .cta-banner .btn-outline-white { width: 100%; justify-content: center; }
         }
     </style>
 </head>
@@ -885,9 +616,9 @@
             </a>
             <ul class="nav-links">
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="areas.html">Areas</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="gillys-electrical-2.html#reviews">Reviews</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -916,200 +647,65 @@
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="gillys-electrical-2.html">Home</a>
                 <span class="breadcrumb-sep">›</span>
-                <span class="breadcrumb-current">About</span>
+                <span>Blog</span>
             </nav>
-            <h1>About Gilly's Electrical</h1>
-            <p>Your local, trusted electrician and ventilation specialist serving Folkestone and East Kent.</p>
+            <h1>Our Blog</h1>
+            <p>Tips, guides, and project updates from your local Folkestone electrician.</p>
         </div>
     </section>
 
-    <!-- OUR STORY -->
-    <section class="story">
-        <div class="story-inner">
-            <div class="story-text">
-                <span class="story-label">Our Story</span>
-                <h2>A Folkestone Electrician You Can Actually Trust</h2>
-                <p>Gilly's Electrical was built on a simple idea: people deserve an electrician who shows up when they say they will, does the job properly, and doesn't leave you guessing about the cost.</p>
-                <p>Based right here in Folkestone, we've spent years serving homeowners, landlords, and businesses across East Kent. We know the local area, we know the community, and we take real pride in the work we do for our neighbours.</p>
-                <p>This isn't a national franchise or a call centre operation. It's a local tradesman who cares about his reputation because he's going to see you at the shops. Every job — big or small — gets the same attention to detail and the same commitment to doing things right.</p>
-                <p>From EICR certificates for landlords to full rewires, consumer unit upgrades, fault finding, and ventilation systems, we cover the full range of electrical work. And when we're done, we leave your home exactly as we found it.</p>
-                <div class="story-highlights">
-                    <div class="story-highlight">
-                        <div class="story-highlight-number">10+</div>
-                        <div class="story-highlight-label">Years Experience</div>
-                    </div>
-                    <div class="story-highlight">
-                        <div class="story-highlight-number">9</div>
-                        <div class="story-highlight-label">Areas Covered</div>
-                    </div>
-                    <div class="story-highlight">
-                        <div class="story-highlight-number">100%</div>
-                        <div class="story-highlight-label">Fully Insured</div>
-                    </div>
+    <!-- BLOG GRID -->
+    <section class="blog-section">
+        <div class="blog-grid">
+
+            <!-- Post 1 -->
+            <div class="service-card">
+                <div class="blog-card-img-placeholder">Blog Image</div>
+                <div class="service-card-body">
+                    <div class="blog-card-date">August 2026</div>
+                    <h3>Do I Need an EICR? A Guide for Landlords in Kent</h3>
+                    <p>If you're a landlord in Kent, you're legally required to have a valid Electrical Installation Condition Report. Here's what you need to know about EICR certificates, how often they're needed, and what happens during an inspection.</p>
+                    <a href="#" class="service-card-link">
+                        Read More
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
                 </div>
             </div>
-            <div class="story-images">
-                <div class="story-image story-image-main">
-                    <img src="gilly-photo4.jpg" alt="Gilly's Electrical at work in Folkestone">
+
+            <!-- Post 2 -->
+            <div class="service-card">
+                <div class="blog-card-img-placeholder">Blog Image</div>
+                <div class="service-card-body">
+                    <div class="blog-card-date">August 2026</div>
+                    <h3>5 Signs You Need Your Consumer Unit Replaced</h3>
+                    <p>Your consumer unit is the heart of your home's electrical system. If it's outdated or showing signs of wear, it could be a safety risk. Here are five warning signs that it's time for an upgrade.</p>
+                    <a href="#" class="service-card-link">
+                        Read More
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
                 </div>
-                <div class="story-image story-image-secondary">
-                    <img src="gilly-photo2.jpg" alt="Gilly's Electrical — quality workmanship in Kent">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="why">
-        <div class="section-header">
-            <span class="section-label">Why Choose Us</span>
-            <h2>What Makes Us Different</h2>
-            <p>No gimmicks, no jargon. Here's what you actually get when you hire Gilly's Electrical.</p>
-        </div>
-        <div class="benefits-grid">
-
-            <!-- 1 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                </div>
-                <h3>Local Folkestone Electrician</h3>
-                <p>Based right here in Folkestone, we know the area and our customers. You're not a job number — you're a neighbour.</p>
             </div>
 
-            <!-- 2 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                </div>
-                <h3>Reliable Appointments</h3>
-                <p>We turn up when we say we will. No waiting around wondering if the electrician is going to show.</p>
-            </div>
-
-            <!-- 3 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="1" x2="12" y2="23"/>
-                        <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-                    </svg>
-                </div>
-                <h3>Clear Pricing</h3>
-                <p>Honest quotes with no hidden charges or surprise costs. You'll know exactly what you're paying before we start.</p>
-            </div>
-
-            <!-- 4 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                </div>
-                <h3>Fully Insured</h3>
-                <p>Full public liability insurance for your peace of mind. We take our responsibility seriously on every job.</p>
-            </div>
-
-            <!-- 5 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                </div>
-                <h3>Quality Workmanship</h3>
-                <p>Every job done to the highest standard, first time. We don't cut corners — your home deserves better than that.</p>
-            </div>
-
-            <!-- 6 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-                        <polyline points="14 2 14 8 20 8"/>
-                        <line x1="16" y1="13" x2="8" y2="13"/>
-                        <line x1="16" y1="17" x2="8" y2="17"/>
-                        <polyline points="10 9 9 9 8 9"/>
-                    </svg>
-                </div>
-                <h3>Certification Provided</h3>
-                <p>All electrical work comes with the relevant certification. Landlords, you're covered — we know exactly what you need.</p>
-            </div>
-
-            <!-- 7 -->
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#547f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
-                    </svg>
-                </div>
-                <h3>Clean and Tidy</h3>
-                <p>We leave your property as we found it. Always. No mess, no dust, no excuses — just a clean finish.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- AREAS WE SERVE -->
-    <section class="areas">
-        <div class="areas-inner">
-            <h2>Areas We Cover Across Kent</h2>
-            <div class="areas-tags">
-                <a href="folkestone.html" class="area-tag">Folkestone</a>
-                <a href="hythe.html" class="area-tag">Hythe</a>
-                <a href="dover.html" class="area-tag">Dover</a>
-                <a href="ashford.html" class="area-tag">Ashford</a>
-                <a href="canterbury.html" class="area-tag">Canterbury</a>
-                <a href="deal.html" class="area-tag">Deal</a>
-                <a href="hawkinge.html" class="area-tag">Hawkinge</a>
-                <a href="sandgate.html" class="area-tag">Sandgate</a>
-                <a href="cheriton.html" class="area-tag">Cheriton</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="cta-inner">
-            <span class="section-label">Get in Touch</span>
-            <h2>Ready to Get Started?</h2>
-            <p>Give us a call or request a free quote. We aim to respond to all enquiries the same day.</p>
-            <div class="cta-buttons">
-                <a href="tel:01303770445" class="btn-primary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-                    </svg>
-                    Call 01303 770 445
-                </a>
-                <a href="contact.html" class="btn-secondary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    Request a Free Quote
-                </a>
-            </div>
         </div>
     </section>
 
     <!-- CTA BANNER -->
     <section class="cta-banner">
         <div class="cta-banner-inner">
-            <h2>Get a Free Quote Today</h2>
-            <p>Whether it's a small repair or a full rewire, we're here to help. Call us or request a quote online.</p>
+            <h2>Need Help With an Electrical Issue?</h2>
+            <p>Get in touch for a free, no-obligation quote.</p>
             <div class="cta-buttons">
                 <a href="tel:01303770445" class="btn-white">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
                     Call 01303 770 445
                 </a>
                 <a href="contact.html" class="btn-outline-white">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
                     Request a Quote
                 </a>
             </div>
@@ -1125,9 +721,9 @@
                 </div>
                 <p>Professional electrician and ventilation specialist serving Folkestone, Hythe, Dover, and the wider Kent area. Fully insured, qualified, and committed to high-quality workmanship on every job.</p>
                 <div class="footer-social">
-                    <a href="https://www.facebook.com/gillys.electrical" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Gilly's Electrical on Facebook">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.875v2.256h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                    <a href="https://www.facebook.com/gillys.electrical" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.027 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.93-1.956 1.886v2.286h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
                         </svg>
                     </a>
                 </div>
@@ -1144,7 +740,6 @@
                         <li><a href="gillys-electrical-2.html#reviews">Reviews</a></li>
                         <li><a href="gillys-electrical-2.html#faq">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="articles.html">Guides</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
